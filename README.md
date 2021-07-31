@@ -12,3 +12,12 @@
 ### Question 2: Which counties had the highest infant pertussis case rates (per 1,000)?
 1. Refer to the Infant Dataset and navigate to the column titled "Case_Rate"
 2. Click the drop down arrow and filter the values from Z --> A to sort the case rates from highest to lowest. Your answer should be Madera County (6.1), Imperial County (5.3), and Butte County (5.1). <br> ![Infant Case Rate','Pertussis Case Rates Among Infants in California Counties'](/infantcaserate.png)
+
+### Question 3: Which counties had the greatest percent increase in pertussis cases between 2010 and 2014? The greatest percent decrease?
+1. Refer to the dataset titled "pertusisRates2010_2015"
+2. Create a new column in M titled "Percent_Change"
+3. In cell M2, insert the equation "=(J2-B2)/B2)"
+4. Press enter, and use autofill or the drag feature to extend the equation to all appropriate cells in the column
+5. Highlight the column and select the "123" feature to convert the values to percentages
+6. Filter the answers from Z --> A to get the counties with the greatest percent increase. These should be percentages with positive values. Notice that Alpine, Modoc, Sierra, and Trinity Counties have error messages due to 0 or missing values. For the counties with values, your answer should be Yolo County (752.94%), Napa County (444.0%), and Lassen County (400%).
+7. Now filter the answers from A --> Z to get the counties with the greatest percent decrease. These should be percentages with negative values. Colusa, Inyo, Mariposa, and Mono Counties all have -100% due to the fact that they have 0 reported cases in 2014. We will need to further investigate whether this is due to missing data or an actual lack of cases. Among the counties with reported cases in both 2010 and 2014, those that experienced the greatet percent decrease are Merced County (-93.13%), San Luis Obispo County (-88.14%), and Del Norte County (-87.50%).
