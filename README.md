@@ -26,6 +26,13 @@
 1. Refer to the Infant Dataset and navigate to the column titled "Case_Rate"
 2. Click the drop down arrow and filter the values from Z --> A to sort the case rates from highest to lowest. Your answer should be Madera County (6.1), Imperial County (5.3), and Butte County (5.1). <br> ![Infant Case Rate','Pertussis Case Rates Among Infants in California Counties'](/infantcaserate.png)
 
+### Question 4: What was the median case rate among Counties for each year between 2010 and 2014?
+1. Refer to the dataset titled "PertusisRates2010_2015"
+2. Filter the cases for 2010 from Z --> A so that California is in the first row. 
+3. Create a new row beneath the dataset titled "Median"
+4. In your new row, go to column C. In that column, insert the equation =MEDIAN (C3:C60). This will calculate the median case rate among the counties, exempting the state of California.
+5. Repeat the appropriate equation in each column with case rates.
+6. Your answer should be 20.555 for 2010, 5.58 for 2011, 2.07 for 2012, 4.10 for 2013, and 17.28 for 2014. Notice that the median case rate is significantly higher in 2010 and 2014 -- the years the outbreaks occurred. 
 
 ### Question 5: Which counties had the greatest percent increase in pertussis cases between 2010 and 2014? The greatest percent decrease?
 1. Refer to the dataset titled "pertusisRates2010_2015"
