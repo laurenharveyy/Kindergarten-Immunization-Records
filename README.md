@@ -17,10 +17,12 @@
 5. Copy and paste the numbers next to the data from n.
 6. Create another pivot table. Set the row as "schoolType" and the Value as a SUM of "nPME" (number of Permanent Medical Exemptions). This will give you the number of students with Personal Medical Exemptions at private and public schools, respecitvely. <br> ![schooltypePMEpivottable','Pivot table of number of students with PME by school type'](/schooltypePMEpivottable.png)
 7. Copy and paste the numbers next to the data from nPBE.
-8. In the sheet with school type, n, nPBE, and nPME, create a new column titled "Exemption_Rate." Your sheet should look like this: <br> !['schooltypeexemptionsheet1','Screenshot of Exemption Sheet Format'](/schooltypeexemptionsheet1.png)
-9. In "Exemption_Rate," add together nPBE and nPME and divide by n. Extent this equation to both cells in the column.
-10. Convert your answer to a percentage. You should have an exemption rate of 3.23% at private schools and 1.81% at public schools.
-11. The answer: Private schools have a higher exemption rate. <br> ![Schooltypeexemptions',Vaccine Exemptions by School Type'](/Schooltypeexemptions.png)
+8. In the sheet with school type, n, nPBE, and nPME, create a new column titled "Exemption_Rate." Your sheet should look like this: <br> !['schooltypeexemptionsheet1','Screenshot of Exemption Sheet Format'](/schooltypeexemptionsheet2.png)
+9. I cell F2 (in the "Exemption_Rate" column) insert the equation "(C2+B2)/D2)." In other words, you will add together the number of PMEs and PBEs and divide this total by the total number of students enrolled. 
+10. Extend this equation to cell F3 to calculate for public schools as well.
+11. Highlight the column and use the "123" feature to convert your values to percentages. 
+12. You should have an exemption rate of 3.23% at private schools and 1.81% at public schools.
+13. The answer: Private schools have a higher exemption rate. <br> ![Schooltypeexemptions',Vaccine Exemptions by School Type'](/Schooltypeexemptions.png)
 
 ### Question 3: What Percent of Exemptions were Personal Belief Exemptions by School Type (Public vs. Private School?)
 1. In the same sheet with the data for School Exemptions by School Type, create a new column in G titled "Percent_PBE."
