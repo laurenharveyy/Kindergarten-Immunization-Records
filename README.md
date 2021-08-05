@@ -45,6 +45,12 @@
 12. Press enter and extend the equation to all cells in the column.
 13. Title Column G "RATE2015." In cell G2, insert the equation "(E2/F2)*100." Extend this equation to all cells in the column. This will give you the number of vaccination students per 100 for the 2015-2016 school year.
 14. Your Sheet should look like this: !['DTPratesheet2',Sheet with DTP Rate Calculations'](/DTPratesheet2.png)
+15. Now, we will calculate the percent change of the rates. Create a new column under H, and title it "PERCENT_CHANGE."
+16. In cell H2, insert the equation "=(G2-D2)/D2." Extend this equation to all other cells in the column.
+17. Highlight Column H and use the "123" feature to convert all values to percentages.
+18. Sort Column H from Z --> A. This will place the highest positive percent change values at the top. (Note: Alpine County will appear in row A. This is due to the fact that, with its null values, the equation will come back with an error message.)
+19. Ommitting Alpine County, the counties with the greatest percent increase are Sierra County (26.92%), Alameda County (2.33%), and Inyo County (2.33%)
+20. Now sort Column H from A --> Z. This will place the counties with the lowest negative percentages (largest percent decrease) at the top. Your answer for the counties with the greatest percent decrease should be Trinity County (-14.21%), Nevada County (-11.71%), and Shasta County (-11.26%).
 
 ### Question 3: Which counties had the highest infant pertussis case rates (per 1,000) between 2014 and 2015?
 1. Refer to the Infant Dataset and navigate to the column titled "Case_Rate"
