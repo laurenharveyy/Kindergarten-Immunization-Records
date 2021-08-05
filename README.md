@@ -44,7 +44,7 @@
 11. Once you have your sheet, calculate the DTP vaccination rate for the 2000-2001 school year by dividing DTP vaccinations by the number of enrolled students. Name Column D ""Rate2000." In cell D2, insert the equation "=(B2/C2)*100." We will multiply by 100 in order to calculate the rate per 100 students. 
 12. Press enter and extend the equation to all cells in the column.
 13. Title Column G "RATE2015." In cell G2, insert the equation "(E2/F2)*100." Extend this equation to all cells in the column. This will give you the number of vaccination students per 100 for the 2015-2016 school year.
-14. Your Sheet should look like this:
+14. Your Sheet should look like this: !['DTPratesheet2',Sheet with DTP Rate Calculations'](/DTPratesheet2.png)
 
 ### Question 3: Which counties had the highest infant pertussis case rates (per 1,000) between 2014 and 2015?
 1. Refer to the Infant Dataset and navigate to the column titled "Case_Rate"
