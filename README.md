@@ -17,8 +17,8 @@
 5. Copy and paste the numbers next to the data from n.
 6. Create another pivot table. Set the row as "schoolType" and the Value as a SUM of "nPME" (number of Permanent Medical Exemptions). This will give you the number of students with Personal Medical Exemptions at private and public schools, respecitvely. <br> ![schooltypePMEpivottable','Pivot table of number of students with PME by school type'](/schooltypePMEpivottable.png)
 7. Copy and paste the numbers next to the data from nPBE.
-8. In the sheet with school type, n, nPBE, and nPME, create a new column titled "Exemption_Rate." Your sheet should look like this: <br> !['schooltypeexemptionsheet1','Screenshot of Exemption Sheet Format'](/schooltypeexemptionsheet2.png)
-9. I cell F2 (in the "Exemption_Rate" column) insert the equation "(C2+B2)/D2)." In other words, you will add together the number of PMEs and PBEs and divide this total by the total number of students enrolled. 
+8. In the sheet with school type, n, nPBE, and nPME, create a new column titled "Exemption_Rate." Your sheet should look like this: <br> !['schooltypeexemptionsheet1','Screenshot of Exemption Sheet Format'](/schooltypeexemptionsheet3.png)
+9. In cell F2 (in the "Exemption_Rate" column) insert the equation "(C2+B2)/D2)." In other words, you will add together the number of PMEs and PBEs and divide this total by the total number of students enrolled (this calculation is for private school students). 
 10. Extend this equation to cell F3 to calculate for public schools as well.
 11. Highlight the column and use the "123" feature to convert your values to percentages. 
 12. You should have an exemption rate of 3.23% at private schools and 1.81% at public schools.
