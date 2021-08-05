@@ -32,7 +32,7 @@
 !['PBEschooltype','PBE by School Type'](/PBEschooltype.png)
 
 ### Question 4: Which counties had the greatest percent increase in DTP vaccinations between the 2000-2001 and 2015-2016 school years? Greatest percent decrease?
-1. Create a pivot table using the Student Data File. Make the row "County" and the Value a SUM of "nDTP" (number of students reporting DTP vaccinations). Create a filter for year and only include 2000 (for the 2000-2001 school year).
+1. Create a pivot table using the Student Data File. Make the row "County" and the Value a SUM of "nDTP" (number of students reporting DTP vaccinations). Create a filter for year and only include 2000 (for the 2000-2001 school year). <br> !['countynDTPtable','DTP vaccinations by County for the 2000-2001 school year'](/countynDTPtable.png)
 2. Copy and paste the values into a new sheet in a column titled "DTP_2000"
 3. Go back to the same pivot table. Change the filter to only include the year 2015 (for the 2015-2016 school year). 
 4. Copy and paste the values into the same sheet. Name the column "DTP_2015."
