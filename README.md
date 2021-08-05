@@ -23,6 +23,12 @@
 11. The answer: Private schools have a higher exemption rate.
 ![Schooltypeexemptions',Vaccine Exemptions by School Type'](/Schooltypeexemptions.png)
 
+### Question 3: What Percent of Exemptions were Personal Belief Exemptions by School Type (Public vs. Private School?)
+1. In the same sheet with the data for School Exemptions by School Type, create a new column in G titled "Percent_PBE."
+2. In cell G2, insert the equation "=C2/(C2+D2)." This will divide the number of PBEs by the total number of exemptions (PBE + PME).
+3. Press enter and extend the equation to cell G3.
+4. For your answer, you should get that 93.21% of exemptions were PBEs at private schools, and 91.38% of exemptions were PBEs at public schools.
+
 ### New Question: Which counties had the greatest percent increase in DTP vaccinations between the 2000-2001 and 2015-2016 school years?
 1. Create a pivot table using the Student Data File. Make the row "County" and the Value a SUM of "nDTP" (number of students reporting DTP vaccinations). Create a filter and only include 2000 (for the 2000-2001 school year).
 2. Copy and paste the values into a new sheet.
