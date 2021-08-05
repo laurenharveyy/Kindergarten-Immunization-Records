@@ -32,17 +32,17 @@
 !['PBEschooltype','PBE by School Type'](/PBEschooltype.png)
 
 ### Question 4: Which counties had the greatest percent increase in DTP vaccinations between the 2000-2001 and 2015-2016 school years? Greatest percent decrease?
-1. Create a pivot table using the Student Data File. Make the row "County" and the Value a SUM of "nDTP" (number of students reporting DTP vaccinations). Create a filter for year and only include 2000 (for the 2000-2001 school year). <br> !['countynDTPtable','DTP vaccinations by County for the 2000-2001 school year'](/countynDTPtable.png)
+1. Create a pivot table using the Student Data File. Make the row "County" and the Value a SUM of "nDTP" (number of students reporting DTP vaccinations). Filter by year and clear all values. Only select 2000. (for the 2000-2001 school year). <br> !['countynDTPtable','DTP vaccinations by county for the 2000-2001 school year'](/countynDTPtable.png)
 2. Copy and paste the values into a new sheet in a column titled "DTP_2000"
-3. Go back to the same pivot table. Change the filter to only include the year 2015 (for the 2015-2016 school year). 
+3. Go back to the same pivot table. Change the filter to only include the year 2015 (for the 2015-2016 school year). <br> !['countynDTPtable2015','DTP vaccinations by county for the 2-15-2016 school year'](/countynDTPtable2015.png)
 4. Copy and paste the values into the same sheet. Name the column "DTP_2015."
-5. Create a pivot table. Make the row "County" and the Value a SUM of "n" (number of students enrolled in each county). Create a filter for year and only select 2000 (for the 2000-2001 school year).
+5. Create a pivot table. Make the row "County" and the Value a SUM of "n" (number of students enrolled in each county). Create a filter for year and only select 2000 (for the 2000-2001 school year). <br> !['countyenrollmenttable2000','Enrollment by county for the 2000-2001 school year'](/countyenrollmenttable2000.png)
 6. Copy and past the values. Name the column "n2000."
-7. Go back to the same pivot table. Change the filter to only include the year 2015 (for the 2015-2016 school year).
+7. Go back to the same pivot table. Change the filter to only include the year 2015 (for the 2015-2016 school year). <br> !['countyenrollmenttable2015','Enrollment by county for the 2015-2016 school year'](/countyenrollmenttable2015.png)
 8. Copy and paste the values into the same sheet. Name the columnn "n2015."
 9. Notice that values in "n2015" are missing for Alpine County. Insert N/A in order to indicate null values. 
-10. Your Google Sheet should look like this: !['DTPratesheet',DTP Numbers for Rate Calculation'](/DTPratesheet.png) <br> Notice that column D is left blank. This is intentional, because this is where we will make rate calculations.
-11. Once you have your sheet, calculate the DTP vaccination rate for the 2000-2001 school year by dividing DTP vaccinations by the number of enrolled students. Name Column D ""Rate2000." In cell D2, insert the equation "=(B2/C2)*100." We will multiply by 100 in order to calculate the rate per 100 students. 
+10. Your Google Sheet should look like this: !['DTPratesheet',DTP Numbers for Rate Calculation'](/DTPratesheet.png) <br> *Notice that column D is left blank. This is intentional, because this is where we will make rate calculations.*
+11. Once you have your sheet, calculate the DTP vaccination rate for the 2000-2001 school year by dividing DTP vaccinations by the number of enrolled students. Name Column D ""Rate2000." In cell D2, insert the equation "=(B2/C2)*100." We will multiply by 100 in order to calculate the rate per 100 students for the 2000-2001 school year. 
 12. Press enter and extend the equation to all cells in the column.
 13. Title Column G "RATE2015." In cell G2, insert the equation "(E2/F2)*100." Extend this equation to all cells in the column. This will give you the number of vaccination students per 100 for the 2015-2016 school year.
 14. Your Sheet should look like this: !['DTPratesheet2',Sheet with DTP Rate Calculations'](/DTPratesheet2.png)
