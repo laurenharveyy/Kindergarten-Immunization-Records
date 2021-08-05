@@ -40,7 +40,11 @@
 7. Go back to the same pivot table. Change the filter to only include the year 2015 (for the 2015-2016 school year).
 8. Copy and paste the values into the same sheet. Name the columnn "n2015."
 9. Notice that values in "n2015" are missing for Alpine County. Insert N/A in order to indicate null values. 
-10. Your Google Sheet should look like this: 
+10. Your Google Sheet should look like this: !['DTPratesheet',DTP Numbers for Rate Calculation'](/DTPratesheet.png) <br> Notice that column D is left blank. This is intentional, because this is where we will make rate calculations.
+11. Once you have your sheet, calculate the DTP vaccination rate for the 2000-2001 school year by dividing DTP vaccinations by the number of enrolled students. Name Column D ""Rate2000." In cell D2, insert the equation "=(B2/C2)*100." We will multiply by 100 in order to calculate the rate per 100 students. 
+12. Press enter and extend the equation to all cells in the column.
+13. Title Column G "RATE2015." In cell G2, insert the equation "(E2/F2)*100." Extend this equation to all cells in the column. This will give you the number of vaccination students per 100 for the 2015-2016 school year.
+14. Your Sheet should look like this:
 
 ### Question 3: Which counties had the highest infant pertussis case rates (per 1,000) between 2014 and 2015?
 1. Refer to the Infant Dataset and navigate to the column titled "Case_Rate"
