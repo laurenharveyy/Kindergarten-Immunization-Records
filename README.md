@@ -30,7 +30,7 @@
 4. For your answer, you should get that 93.21% of exemptions were PBEs at private schools, and 91.38% of exemptions were PBEs at public schools.
 !['PBEschooltype','PBE by School Type'](/PBEschooltype.png)
 
-### New Question: Which counties had the greatest percent increase in DTP vaccinations between the 2000-2001 and 2015-2016 school years? Greatest percent decrease?
+### Question 4: Which counties had the greatest percent increase in DTP vaccinations between the 2000-2001 and 2015-2016 school years? Greatest percent decrease?
 1. Create a pivot table using the Student Data File. Make the row "County" and the Value a SUM of "nDTP" (number of students reporting DTP vaccinations). Create a filter for year and only include 2000 (for the 2000-2001 school year).
 2. Copy and paste the values into a new sheet in a column titled "DTP_2000"
 3. Go back to the same pivot table. Change the filter to only include the year 2015 (for the 2015-2016 school year). 
@@ -52,23 +52,14 @@
 19. Ommitting Alpine County, the counties with the greatest percent increase are Sierra County (26.92%), Alameda County (2.33%), and Inyo County (2.33%). ![DTPpercentincrease','Counties with greatest percent increase in DTP vaccinations'](/DTPpercentincrease.png)
 20. Now sort Column H from A --> Z. This will place the counties with the lowest negative percentages (largest percent decrease) at the top. Your answer for the counties with the greatest percent decrease should be Trinity County (-14.21%), Nevada County (-11.71%), and Shasta County (-11.26%). !['DTPpercentdecrease','Counties with greatest percvent decrease in DTP vaccinations'](/DTPpercentdecrease.png)
 
-### Question 3: Which counties had the highest infant pertussis case rates (per 1,000) between 2014 and 2015?
+### Question 5: Which counties had the highest infant pertussis case rates (per 1,000) between 2014 and 2015?
 1. Refer to the Infant Dataset and navigate to the column titled "Case_Rate"
 2. Click the drop down arrow and filter the values from Z --> A to sort the case rates from highest to lowest. Your answer should be Madera County (6.1), Imperial County (5.3), and Butte County (5.1). <br> ![Infant Case Rate','Pertussis Case Rates Among Infants in California Counties'](/infantcaserate.png)
 
-### Question 4: What was the median case rate among Counties for each year between 2010 and 2014?
+### Question 6: What was the median case rate among Counties for each year between 2010 and 2014?
 1. Refer to the dataset titled "PertusisRates2010_2015"
 2. Filter the cases for 2010 from Z --> A so that California is in the first row. 
 3. Create a new row beneath the dataset titled "Median"
 4. In your new row, go to column C. In that column, insert the equation =MEDIAN (C3:C60). This will calculate the median case rate among the counties, exempting the state of California.
 5. Repeat the appropriate equation in each column with case rates.
 6. Your answer should be 20.555 for 2010, 5.58 for 2011, 2.07 for 2012, 4.10 for 2013, and 17.28 for 2014. Notice that the median case rate is significantly higher in 2010 and 2014 -- the years the outbreaks occurred. 
-
-### Question 5: Which counties had the greatest percent increase in pertussis cases between 2010 and 2014? The greatest percent decrease?
-1. Refer to the dataset titled "pertusisRates2010_2015"
-2. Create a new column in M titled "Percent_Change"
-3. In cell M2, insert the equation "=(J2-B2)/B2)"
-4. Press enter, and use autofill or the drag feature to extend the equation to all appropriate cells in the column
-5. Highlight the column and select the "123" feature to convert the values to percentages
-6. Filter the answers from Z --> A to get the counties with the greatest percent increase. These should be percentages with positive values. Notice that Alpine, Modoc, Sierra, and Trinity Counties have error messages due to 0 or missing values. For the counties with values, your answer should be Yolo County (752.94%), Napa County (444.0%), and Lassen County (400%).
-7. Now filter the answers from A --> Z to get the counties with the greatest percent decrease. These should be percentages with negative values. Colusa, Inyo, Mariposa, and Mono Counties all have -100% due to the fact that they have 0 reported cases in 2014. We will need to further investigate whether this is due to missing data or an actual lack of cases. Among the counties with reported cases in both 2010 and 2014, those that experienced the greatet percent decrease are Merced County (-93.13%), San Luis Obispo County (-88.14%), and Del Norte County (-87.50%).
