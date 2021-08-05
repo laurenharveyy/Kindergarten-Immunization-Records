@@ -30,11 +30,17 @@
 4. For your answer, you should get that 93.21% of exemptions were PBEs at private schools, and 91.38% of exemptions were PBEs at public schools.
 !['PBEschooltype','PBE by School Type'](/PBEschooltype.png)
 
-### New Question: Which counties had the greatest percent increase in DTP vaccinations between the 2000-2001 and 2015-2016 school years?
-1. Create a pivot table using the Student Data File. Make the row "County" and the Value a SUM of "nDTP" (number of students reporting DTP vaccinations). Create a filter and only include 2000 (for the 2000-2001 school year).
-2. Copy and paste the values into a new sheet.
+### New Question: Which counties had the greatest percent increase in DTP vaccinations between the 2000-2001 and 2015-2016 school years? Greatest percent decrease?
+1. Create a pivot table using the Student Data File. Make the row "County" and the Value a SUM of "nDTP" (number of students reporting DTP vaccinations). Create a filter for year and only include 2000 (for the 2000-2001 school year).
+2. Copy and paste the values into a new sheet in a column titled "DTP_2000"
 3. Go back to the same pivot table. Change the filter to only include the year 2015 (for the 2015-2016 school year). 
-4. Copy and paste the values next to the other values.
+4. Copy and paste the values into the same sheet. Name the column "DTP_2015."
+5. Create a pivot table. Make the row "County" and the Value a SUM of "n" (number of students enrolled in each county). Create a filter for year and only select 2000 (for the 2000-2001 school year).
+6. Copy and past the values. Name the column "n2000."
+7. Go back to the same pivot table. Change the filter to only include the year 2015 (for the 2015-2016 school year).
+8. Copy and paste the values into the same sheet. Name the columnn "n2015."
+9. Notice that values in "n2015" are missing for Alpine County. Insert N/A in order to indicate null values. 
+10. Your Google Sheet should look like this: 
 
 ### Question 3: Which counties had the highest infant pertussis case rates (per 1,000) between 2014 and 2015?
 1. Refer to the Infant Dataset and navigate to the column titled "Case_Rate"
