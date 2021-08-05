@@ -11,17 +11,16 @@
 
 ### Question 2: Did Public or Private Schools have a higher rate of exemptions including Personal Belief Exemption and Permanent Medical Exemption)?
 1. Refer to the dataset titled "Student Data"
-2. Create a new pivot table. Set the row as "schoolType" and the value as a SUM of "n" (number of students). This will give you the number of students enrolled at private and public schools, respectively.
+2. Create a new pivot table. Set the row as "schoolType" and the value as a SUM of "n" (number of students). This will give you the number of students enrolled at private and public schools, respectively. <br> !['schooltypeenrollmentpivottable','Pivot table of enrollment by school type'](/schooltypeenrollmentpivottable.png)
 3. Copy and paste the results into a new sheet.
-4. Create another pivot table. Set the row as "schoolType" and the value as a SUM of "nPBE" (number of Personal Belief Exemptions). This will give you the number of students with Personal Belief Exemptions at private and public schools, respectively. 
+4. Create another pivot table. Set the row as "schoolType" and the value as a SUM of "nPBE" (number of Personal Belief Exemptions). This will give you the number of students with Personal Belief Exemptions at private and public schools, respectively. <br> !['schooltypePBEpivottable','Pivot table of number of students with PBE by school type'](/schooltypePBEpivottable.png)
 5. Copy and paste the numbers next to the data from n.
-6. Create another pivot table. Set the row as "schoolType" and the Value as a SUM of "nPME" (number of Permanent Medical Exemptions). This will give you the number of students with Personal Medical Exemptions at private and public schools, respecitvely.
+6. Create another pivot table. Set the row as "schoolType" and the Value as a SUM of "nPME" (number of Permanent Medical Exemptions). This will give you the number of students with Personal Medical Exemptions at private and public schools, respecitvely. <br> ![schooltypePMEpivottable','Pivot table of number of students with PME by school type'](/schooltypePMEpivottable.png)
 7. Copy and paste the numbers next to the data from nPBE.
-8. In the sheet with school type, n, nPBE, and nPME, create a new column titled "Exemption_Rate." 
+8. In the sheet with school type, n, nPBE, and nPME, create a new column titled "Exemption_Rate." Your sheet should look like this: <br. !['schooltypeexemptionsheet1','Screenshot of Exemption Sheet Format'](/schooltypeexemptionsheet1)
 9. In "Exemption_Rate," add together nPBE and nPME and divide by n. Extent this equation to both cells in the column.
 10. Convert your answer to a percentage. You should have an exemption rate of 3.23% at private schools and 1.81% at public schools.
-11. The answer: Private schools have a higher exemption rate.
-![Schooltypeexemptions',Vaccine Exemptions by School Type'](/Schooltypeexemptions.png)
+11. The answer: Private schools have a higher exemption rate. <br> ![Schooltypeexemptions',Vaccine Exemptions by School Type'](/Schooltypeexemptions.png)
 
 ### Question 3: What Percent of Exemptions were Personal Belief Exemptions by School Type (Public vs. Private School?)
 1. In the same sheet with the data for School Exemptions by School Type, create a new column in G titled "Percent_PBE."
@@ -62,4 +61,4 @@
 3. Create a new row beneath the dataset titled "Median"
 4. In your new row, go to column C. In that column, insert the equation =MEDIAN (C3:C60). This will calculate the median case rate among the counties, exempting the state of California.
 5. Repeat the appropriate equation in each column with case rates.
-6. Your answer should be 20.555 for 2010, 5.58 for 2011, 2.07 for 2012, 4.10 for 2013, and 17.28 for 2014. Notice that the median case rate is significantly higher in 2010 and 2014 -- the years the outbreaks occurred. 
+6. Your answer should be 20.555 for 2010, 5.58 for 2011, 2.07 for 2012, 4.10 for 2013, and 17.28 for 2014. Notice that the median case rate is significantly higher in 2010 and 2014 -- the years the outbreaks occurred. <br> !['mediancaserate','Median case rates between 2010 and 2014'](/mediancaserate.png)
