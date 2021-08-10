@@ -67,7 +67,8 @@
 10. Copy and paste your results into a new column in the same sheet as the previous steps.
 11. Return to the same pivot table. Change the year filter to 2015 (for the 2015-2016 school year). <br> ![Enrolled students 2015','Students enrolled in each county for the 2015-2016 school year'](/n2015.png)
 12. Copy and paste your results into a new column in the same sheet as the previous steps.
-13. Your
+13. Your sheet should look like this:
+14. 
 
 
 ### Question 5: Which counties had the highest infant pertussis case rates (per 1,000) between 2014 and 2015?
