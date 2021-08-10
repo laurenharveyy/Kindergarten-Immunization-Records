@@ -67,15 +67,28 @@
 10. Copy and paste your results into a new column in the same sheet as the previous steps.
 11. Return to the same pivot table. Change the year filter to 2015 (for the 2015-2016 school year). <br> ![Enrolled students 2015','Students enrolled in each county for the 2015-2016 school year'](/n2015.png)
 12. Copy and paste your results into a new column in the same sheet as the previous steps.
-13. Your sheet should look like this:
-14. 
+13. Your sheet should look like this (Notice the empty columns. This is purposeful for the sake of necesary calculations.)
+14. In Column D, create a new column called "Total2000." 
+15. In cell D2, insert the equation "=B2+C2" in order to add together the total number of PBE and PME for Nevada County during the 2000-2001 school year.
+16. Extend this equation to all cells in the column.
+17. In Column I, create a new column titled "Total2015"
+18. In cell I2, insert the equation "=G2+H2" in order to add together the total number of PBE and PME for Nevada County during the 2015-2016 school year.
+19. Title Column F "Rate2000."
+20. In cell F2, insert the equation "=(D2/E2)*100." Ths will give you the rate of exemptions per 100 students in Nevada County for the 2000-2001 school year.
+21. Extend the equation to all cells in the column.
+22. Title column K "Rate 2015."
+23. In cell K2, insert the equation "=(I2/J2*100." This will give you the rate of exemptions per 100 students in Nevada County for the 2015-2016 school year.
+24. Extend the equation to all cells in the column.
+25. Title Column L "PCT_CHG." 
+26. In cell L2, insert the equation "=(K2-F2)/F2." This will calculate the percent change in exemptins for Nevada County between the 2000-2001 and 2015-2016 school years. 
+27. Extend the equation to all cells in the column.
+28. Your sheet should look like this.
 
-
-### Question 5: Which counties had the highest infant pertussis case rates (per 1,000) between 2014 and 2015?
+### Question 6: Which counties had the highest infant pertussis case rates (per 1,000) between 2014 and 2015?
 1. Refer to the Infant Dataset and navigate to the column titled "Case_Rate"
 2. Click the drop down arrow and filter the values from Z --> A to sort the case rates from highest to lowest. Your answer should be Madera County (6.1), Imperial County (5.3), and Butte County (5.1). <br> ![Infant Case Rate','Pertussis Case Rates Among Infants in California Counties'](/infantcaserate.png)
 
-### Question 6: What was the median case rate among Counties for each year between 2010 and 2014?
+### Question 7: What was the median case rate among Counties for each year between 2010 and 2014?
 1. Refer to the dataset titled "PertusisRates2010_2015"
 2. Filter the cases for 2010 from Z --> A so that California is in the first row. 
 3. Create a new row beneath the dataset titled "Median"
