@@ -5,7 +5,7 @@ Data shows a correlation between Counties with low vaccination rates and high ex
 
 Therefore, my story will focus on exemption trends in California counties over time. Specifically, it will compare pre-2016 exemptions with the most recent data in order to see how legislation has changed vaccination and exemption patterns.
 
-***Sources***
+***Interviewees***
 
 1. Dr. Ninez Ponce from the California Health Interview Survey can speak to vaccination and overall public health trends in the state of California. 
 
@@ -15,6 +15,11 @@ Phone Number: (310) 794-2691
 2. Leah Russin from Vaccinate California works directly with vaccine initiatives in the state and can provide more insight into what is driving vaccine hesitancy and what is being done to combat it. 
 
 Email(s): press@vaccinatecalifornia.org, info@vaccinatecalifornia.org
+
+***Document Sources***
+1. KidsData has updated data on exemption rates in each California county up until the 2018-2019 school year. Additional files also have data on vaccination rates. This can give me an idea of how exemption and vaccination trends have changed since the ban on Personal Belief Exemptions.
+2. This research report demonstrates a correlation between counties with high Personal Belief Exemptions pre-2016 and high increases in Permanent Medical Exemptions post-2016. This will help support my analysis of exemption trends before and after California’s ban on Personal Belief Exemptions. 
+
 
 ## Data Analysis
 
