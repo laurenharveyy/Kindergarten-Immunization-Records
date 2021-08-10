@@ -61,28 +61,34 @@
 4. Copy and paste your results into a new sheet. <br> 
 5. Return to the same pivot table. Modify the filter to only include 2015 (for the 2015-2016 schoool year). <br> !['Personal Belief Exemptions 2015','Pivot table of personal belief exemptions for the 2015-2016 school year'](/PBE2015.png)
 6. Copy and paste your results into a new column in the same sheet where you pasted your previous results. 
-7. Create a new pivot table. Set the row as "County" and the value as "n" for the number of students enrolled in each county.
+7. Create a new pivot table. Set the row as "County" and the value as "nPME" for the number of students with Permanent Medical Exsemptions for each county.
 8. Create a filter for County and select only Trinity, Nevada, and Shasta.
-9. Create a filter for year and choose 2000 (for the 2000-2001 school year). <br> ![Enrolled students 2000','Students enrolled in each county for the 2000-2001 school year](/n2000.png)
-10. Copy and paste your results into a new column in the same sheet as the previous steps.
-11. Return to the same pivot table. Change the year filter to 2015 (for the 2015-2016 school year). <br> ![Enrolled students 2015','Students enrolled in each county for the 2015-2016 school year'](/n2015.png)
-12. Copy and paste your results into a new column in the same sheet as the previous steps.
-13. Your sheet should look like this (Notice the empty columns. This is purposeful for the sake of necesary calculations.)
-14. In Column D, create a new column called "Total2000." 
-15. In cell D2, insert the equation "=B2+C2" in order to add together the total number of PBE and PME for Nevada County during the 2000-2001 school year.
-16. Extend this equation to all cells in the column.
-17. In Column I, create a new column titled "Total2015"
-18. In cell I2, insert the equation "=G2+H2" in order to add together the total number of PBE and PME for Nevada County during the 2015-2016 school year.
-19. Title Column F "Rate2000."
-20. In cell F2, insert the equation "=(D2/E2)*100." Ths will give you the rate of exemptions per 100 students in Nevada County for the 2000-2001 school year.
-21. Extend the equation to all cells in the column.
-22. Title column K "Rate 2015."
-23. In cell K2, insert the equation "=(I2/J2*100." This will give you the rate of exemptions per 100 students in Nevada County for the 2015-2016 school year.
-24. Extend the equation to all cells in the column.
-25. Title Column L "PCT_CHG." 
-26. In cell L2, insert the equation "=(K2-F2)/F2." This will calculate the percent change in exemptins for Nevada County between the 2000-2001 and 2015-2016 school years. 
-27. Extend the equation to all cells in the column.
-28. Your sheet should look like this.
+9. Create a filter for year and choose 2000 (for the 2000-2001 school year). <br> ![Permanent Medical Exemptions 2000','Pivot table of permanent medical exemptions for the 2000-2001 school year'](/PME20001.png)
+10. Copy and paste your results into a new column in the same sheet where you pasted your previous results.
+11. Return to the same pivot table. Modify the filter to only include 2015 (for the 2015-2016 school year). <br> ![Permanent Medical Exemptions 2015','Pivot table fo permanent medical exemptions for the 2015-2016 school year'](/PME20151.png)
+12. Create a new pivot table. Set the row as "County" and the value as "n" for the number of students enrolled in each county.
+13. Create a filter for County and select only Trinity, Nevada, and Shasta.
+14. Create a filter for year and choose 2000 (for the 2000-2001 school year). <br> ![Enrolled students 2000','Students enrolled in each county for the 2000-2001 school year](/n2000.png)
+15. Copy and paste your results into a new column in the same sheet as the previous steps.
+16. Return to the same pivot table. Change the year filter to 2015 (for the 2015-2016 school year). <br> ![Enrolled students 2015','Students enrolled in each county for the 2015-2016 school year'](/n2015.png)
+17. Copy and paste your results into a new column in the same sheet as the previous steps.
+18. Your sheet should look like this: <br> !['Percent Change in Exemptions Sheet','Sheet layout before calculations for the percent change in vaccine exemptions'](/exemptionchangesheet.png) <br>  *Notice the empty columns. This is purposeful for the sake of necesary calculations.*
+19. In Column D, create a new column called "Total2000." 
+20. In cell D2, insert the equation "=B2+C2" in order to add together the total number of PBE and PME for Nevada County during the 2000-2001 school year.
+21. Extend this equation to all cells in the column.
+22. In Column I, create a new column titled "Total2015"
+23. In cell I2, insert the equation "=G2+H2" in order to add together the total number of PBE and PME for Nevada County during the 2015-2016 school year.
+24. Title Column F "Rate2000."
+25. In cell F2, insert the equation "=(D2/E2)*100." Ths will give you the rate of exemptions per 100 students in Nevada County for the 2000-2001 school year.
+26. Extend the equation to all cells in the column.
+27. Title column K "Rate 2015."
+28. In cell K2, insert the equation "=(I2/J2*100." This will give you the rate of exemptions per 100 students in Nevada County for the 2015-2016 school year.
+29. Extend the equation to all cells in the column.
+30. Title Column L "PCT_CHG." 
+31. In cell L2, insert the equation "=(K2-F2)/F2." This will calculate the percent change in exemptins for Nevada County between the 2000-2001 and 2015-2016 school years. 
+32. Extend the equation to all cells in the column.
+33. Use the "123" function to change the values to percentages.
+34. Your sheet should look like this: <br> !['Final Results Percent Change Exemptions','Sheet that documents the final results for the calculations in the percent change of vaccine exemptions in select counties'](/exemptionchangeresults.png) <br> The answer is 188.21% in Nevada County, 500.27% in Shasta County, and 236.00% in Trinity County.
 
 ### Question 6: Which counties had the highest infant pertussis case rates (per 1,000) between 2014 and 2015?
 1. Refer to the Infant Dataset and navigate to the column titled "Case_Rate"
