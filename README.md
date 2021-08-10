@@ -56,9 +56,18 @@
 
 ### Question 5: Of the counties with the greatest percent decrease in DTP vaccinations among students (Ttrinity, Nevada, and Shasta), what was the percentchange in vaccine exemptions?
 1. Create a pivot table in "Student Data." Set the row as "County" and the value as "nPBE" for the number of students with Personal Belief Exemptions for each county.
-2. Create a filter for Counties and select only Trinity, Nevada, and Shasta.
-3. Create a filter for year and choose 2000 for the 2000-2001 school year.
-4. Copy and paste your results into a new sheet. <br> !['Personal Belief Exemptions 2000','Pivot table of personal belief exemptions in 2000'](/the first pivot table.png)
+2. Create a filter for County and select only Trinity, Nevada, and Shasta.
+3. Create a filter for year and choose 2000 (for the 2000-2001 school year). <br> !['Personal Belief Exemptions 2000','Pivot table of personal belief exemptions for the 2000-2001 school year'](/PBE2000.png)
+4. Copy and paste your results into a new sheet. <br> 
+5. Return to the same pivot table. Modify the filter to only include 2015 (for the 2015-2016 schoool year). <br> !['Personal Belief Exemptions 2015','Pivot table of personal belief exemptions for the 2015-2016 school year'](/PBE2015.png)
+6. Copy and paste your results into a new column in the same sheet where you pasted your previous results. 
+7. Create a new pivot table. Set the row as "County" and the value as "n" for the number of students enrolled in each county.
+8. Create a filter for County and select only Trinity, Nevada, and Shasta.
+9. Create a filter for year and choose 2000 (for the 2000-2001 school year). <br> ![Enrolled students 2000','Students enrolled in each county for the 2000-2001 school year](/n2000.png)
+10. Copy and paste your results into a new column in the same sheet as the previous steps.
+11. Return to the same pivot table. Change the year filter to 2015 (for the 2015-2016 school year). <br> ![Enrolled students 2015','Students enrolled in each county for the 2015-2016 school year'](/n2015.png)
+12. Copy and paste your results into a new column in the same sheet as the previous steps.
+13. Your
 
 
 ### Question 5: Which counties had the highest infant pertussis case rates (per 1,000) between 2014 and 2015?
