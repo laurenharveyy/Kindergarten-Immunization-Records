@@ -1,5 +1,23 @@
 # Kindergarten-Immunization-Records
 
+## Story 
+Data shows a correlation between Counties with low vaccination rates and high exemption rates — particularly Personal Belief Exemptions (given for religious or philosophical reasons) and Permanent Medical Exemptions (given for medical conditions). Particularly, Trinity County, Nevada County, and Shasta County had the greatest percent decrease in Diphtheria, Pertussis, and Tetanus (DTP) vaccinations among incoming Kindergarten students between the 2000-2001 and 2015-2016 school years. Additionally, these counties had 236%, 188%, and 500% increases in Personal Belief Exemptions and Permanent Medical Exemptions, respectively. However, following the passing of Senate Bill 277, California students are no longer to use Personal Belief Exemptions; as a result, 2016 was the last year that incoming Kindergarteners were able to register with them. According to data from the California Department of Public Health, this has lead to a 500% increase in Personal Medical Exemptions in California. 
+
+Therefore, my story will focus on exemption trends in California counties over time. Specifically, it will compare pre-2016 exemptions with the most recent data in order to see how legislation has changed vaccination and exemption patterns.
+
+***Sources***
+
+1. Dr. Ninez Ponce from the California Health Interview Survey can speak to vaccination and overall public health trends in the state of California. 
+
+Email: nponce@ucla.edu <br>
+Phone Number: (310) 794-2691
+
+2. Leah Russin from Vaccinate California works directly with vaccine initiatives in the state and can provide more insight into what is driving vaccine hesitancy and what is being done to combat it. 
+
+Email(s): press@vaccinatecalifornia.org, info@vaccinatecalifornia.org
+
+## Data Analysis
+
 ### Question 1: Which counties had the highest DTP vaccination rates among students between the 2000-2001 and 2015-2016 school year? The lowest?
 1. Create a pivot table using the Student Data File. Make the row County and the Value a SUM of "nDTP" (number of students reporting DTP vaccinations)<br> !['nDTPcounty','Pivot Table for Sum of DTP Vaccinations by County'](/nDTPcounty.png)
 2. Copy and paste the results into another sheet
