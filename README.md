@@ -47,6 +47,13 @@ Source | Description
 7. Create a new column titled "Exemption_Rate." I made mine in column F. Add together the SUM of PBE and the SUM of PME and divide by the SUM of n. For instance, in cell F2, I input the equation "=(B2 + C2)/D2." Extend the equation to all cells in the column. Use the "123" feature to convert to a percentage.
 8. Sort "Exemption_Rate" from Z-->A to get the highest percentages on top. The top 3 should be Nevada County, Trinity County, and Siskiyou County. Here are my answers: <br> !['Exemption Results','Screenshot of Google Sheet with exemption results'](/exemptionsheetafter.png)
 
+### Question 3: What percent of incoming Kindergarteners in each county had PBE? PME?
+1. Refer to the "Exemptions" sheet in the Student Data File.
+2. Create two new columns titled "PercentPBE" and "PercentPME." Mine are in columns G and H, respectively.
+3. Under "PercentPBE," divide the SUM of PBE by the SUM of n. For instance, I wrote in cell G2, "=(B2/D2)." Extend the equation to all cells in the column. Use the "123" feature to convert to a percentage. 
+4. Under "PercentPME," divide the SUM of PME by the SUM of n. For instance, I wrote in cell H2, "=(C2/D2)."  Extend the equation to all cells in the column. Use the "123" feature to convert to a percentage. 
+5. These are my results:
+
 ### Question 2: Did Public or Private Schools have a higher rate of exemptions including Personal Belief Exemption and Permanent Medical Exemption)?
 1. Refer to the dataset titled "Student Data"
 2. Create a new pivot table. Set the row as "schoolType" and the value as a SUM of "n" (number of students). This will give you the number of students enrolled at private and public schools, respectively. <br> !['schooltypeenrollmentpivottable','Pivot table of enrollment by school type'](/schooltypenrollmentpivottable.png)
