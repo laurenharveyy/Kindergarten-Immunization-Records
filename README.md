@@ -37,6 +37,16 @@ Source | Description
 7. Sort the percentages from largest to smallest (Z --> A) to get the counties with the highest vaccination rates. Your answer should be Colusa County (97.95%), Glenn County (97.76%), and Kings County (97.53%).
 8. Sort the percentages from smallest to largest (A --> Z) to get the counties with the lowest vaccination rates. Your answer should be Nevada County (79.26%), Tuolumne County (83.56%), and Humboldt County (84.68%).
 
+### Question 2: Which counties had the highest percentage of incoming kindergarten students with exemptions, including both Personal Belief Exemptions (PBE) and Permanent Medical Exemptions (PME)? Calculate for the span between the 2000-2001 and 2015-2016 school years.
+1. Create a pivot table in the Student Data File. Make the row "County" and the value a SUM of "nPBE" for the total number of students reporting PBE in each county. <br> !['PBE Pivot Table','Pivot table of students reporting PBE in each county'](/PivotPersonalBelief.png)
+2. Copy and paste your results into a new sheet called "Exemptions." 
+3. Create a new pivot table. Make the row "County" and the value a SUM of "nPME" for the total number of students reporting PME in each county. <br> 1['PME Pivot Table','Pivot table of students reporting PME in each county'](/PivotPermanentMedical.png)
+4. Copy and paste your results into the "Exemptions" sheet.
+5. Create a new pivot table. Make the row "County" and the value a SUM of "n" for the total number of incoming kindergarteners enrolled in each county. <br> !['Enrollment Pivot Table','Pivot table of incoming Kindergareners enrolled in each county'](/ncounty.png)
+6. Copy and paste your results into "Exemptions." My sheet looks like this: <br> !['Exemption Sheet','Screenshot of Exemption Sheet'](/exemptionsheetbefore.png)
+7. Create a new column titled "Exemption_Rate." I made mine in column F. Add together the SUM of PBE and the SUM of PME and divide by the SUM of n. For instance, in cell F2, I input the equation "=(B2 + C2)/D2." Extend the equation to all cells in the column. Use the "123" feature to convert to a percentage.
+8. Sort "Exemption_Rate" from Z-->A to get the highest percentages on top. The top 3 should be Nevada County, Trinity County, and Siskiyou County. Here are my answers: <br> !['Exemption Results','Screenshot of Google Sheet with exemption results'](/exemptionsheetafter.png)
+
 ### Question 2: Did Public or Private Schools have a higher rate of exemptions including Personal Belief Exemption and Permanent Medical Exemption)?
 1. Refer to the dataset titled "Student Data"
 2. Create a new pivot table. Set the row as "schoolType" and the value as a SUM of "n" (number of students). This will give you the number of students enrolled at private and public schools, respectively. <br> !['schooltypeenrollmentpivottable','Pivot table of enrollment by school type'](/schooltypenrollmentpivottable.png)
