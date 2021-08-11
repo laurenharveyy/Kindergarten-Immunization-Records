@@ -34,15 +34,15 @@ Source | Description
 2. Copy and paste the results into another sheet titled "DTP_Vax"
 3. Create another pivot table using the Student Data File. Make the row County and the Value a SUM of "n" in order to determine the number of incoming kindergarteners enrolled in each County. <br> !['ncounty','Pivot Table for Students Enrolled in Each County'](/ncounty.png)
 6. Copy and paste the results into the "DTP_Vax" sheet. Make sure each value is aligned with the appropriate county. 
-7. Create a new column in the "DTP_Vax" sheet and title it "DTPVax_Percent." I put mine in Column D. My sheet looks like this: <br> !['DTPcountyratesheet',DTP vaccination rates by county sheet'](/DTPcountyratesheet.png) *Note: My screenshot says "DTPVax_Rate" in column D. Instead, it should say 'DTPVax_Percent."
+7. Create a new column in the "DTP_Vax" sheet and title it "DTPVax_Percent." I put mine in Column D. My sheet looks like this: <br> !['DTPcountyratesheet',DTP vaccination rates by county sheet'](/DTPcountyratesheet.png) <br> *Note: My screenshot says "DTPVax_Rate" in column D. Instead, it should say 'DTPVax_Percent."*
 8. Divide the number of students vaccinated against DTP by the total number of students enrolled in each county. I went to cell D2 input the equation "=B2/C2." Use autofill or the dragging feature to extend this formula to all cells in the column. Convert the resulting values in DTP_Rate into percentages using the "123" feature in the toolbar
 10. Sort the percentages from largest to smallest (Z --> A) to get the counties with the highest percentage of incoming kindergarteners with the DTP vaccination. Your answer should be Colusa County (97.95%), Glenn County (97.76%), and Kings County (97.53%).
 11. Sort the percentages from smallest to largest (A --> Z) to get the counties with the lowest percentage of incoming kindergarteners with the DTP vaccination. Your answer should be Nevada County (79.26%), Tuolumne County (83.56%), and Humboldt County (84.68%).
 
 ### Question 2: Which counties had the highest percentage of incoming kindergarteners with vaccine exemptions, including both Personal Belief Exemptions (PBE) and Permanent Medical Exemptions (PME)? Calculate for the span between the 2000-2001 and 2015-2016 school years.
-1. Create a pivot table in the Student Data File. Make the row "County" and the value a SUM of "nPBE" for the total number of students reporting PBE in each county. <br> !['PBE Pivot Table','Pivot table of students reporting PBE in each county'](/PivotPersonalBelief.png)
+1. Create a pivot table in the Student Data File. Make the row "County" and the value a SUM of "nPBE" in order to determine the total number of incoming kindergarteners with PBEs in each county. <br> !['PBE Pivot Table','Pivot table of students reporting PBE in each county'](/PivotPersonalBelief.png)
 2. Copy and paste your results into a new sheet called "Exemptions." 
-3. Create a new pivot table. Make the row "County" and the value a SUM of "nPME" for the total number of students reporting PME in each county. <br> 1['PME Pivot Table','Pivot table of students reporting PME in each county'](/PivotPermanentMedical.png)
+3. Create a new pivot table. Make the row "County" and the value a SUM of "nPME" in order to determine the total number of students with PMEs in each county. <br> !['PME Pivot Table','Pivot table of students reporting PME in each county'](/PivotPermanentMedical.png)
 4. Copy and paste your results into the "Exemptions" sheet.
 5. Create a new pivot table. Make the row "County" and the value a SUM of "n" for the total number of incoming kindergarteners enrolled in each county. <br> !['Enrollment Pivot Table','Pivot table of incoming Kindergareners enrolled in each county'](/ncounty.png)
 6. Copy and paste your results into "Exemptions." My sheet looks like this: <br> !['Exemption Sheet','Screenshot of Exemption Sheet'](/exemptionsheetbefore.png)
@@ -56,17 +56,17 @@ Source | Description
 4. Under "PercentPME," divide the SUM of PME by the SUM of n. For instance, I wrote in cell H2, "=(C2/D2)."  Extend the equation to all cells in the column. Use the "123" feature to convert to a percentage. 
 5. These are my results: <br> !['Percentages of PBE and PME by County','Screenshot of Google Sheet that shows percentage of incoming kindrgarteners with PBE and PME by county'](/exemptionsheetpt2.png)
 
-### Question 4: Did Public or Private Schools have a higher rate of exemptions including Personal Belief Exemption and Permanent Medical Exemption)?
-1. Refer to the dataset titled "Student Data"
-2. Create a new pivot table. Set the row as "schoolType" and the value as a SUM of "n" (number of students). This will give you the number of students enrolled at private and public schools, respectively. <br> !['schooltypeenrollmentpivottable','Pivot table of enrollment by school type'](/schooltypenrollmentpivottable.png)
-3. Copy and paste the results into a new sheet.
+### Question 4: Did Public or Private Schools have a higher rate of exemptions, including PBEs and PMEs?
+1. Refer to the Student Data File.
+2. Create a new pivot table. Set the row as "schoolType" and the value as a SUM of "n" (the number of enrolled students). This will give you the number of students enrolled at private and public schools, respectively. <br> !['schooltypeenrollmentpivottable','Pivot table of enrollment by school type'](/schooltypenrollmentpivottable.png)
+3. Copy and paste the results into a new sheet titled "School_Type."
 4. Create another pivot table. Set the row as "schoolType" and the value as a SUM of "nPBE" (number of Personal Belief Exemptions). This will give you the number of students with Personal Belief Exemptions at private and public schools, respectively. <br> !['schooltypePBEpivottable','Pivot table of number of students with PBE by school type'](/schooltypePBEpivottable.png)
-5. Copy and paste the numbers next to the data from n.
+5. Copy and paste the results into the "School_Type" sheet.
 6. Create another pivot table. Set the row as "schoolType" and the Value as a SUM of "nPME" (number of Permanent Medical Exemptions). This will give you the number of students with Personal Medical Exemptions at private and public schools, respecitvely. <br> ![schooltypePMEpivottable','Pivot table of number of students with PME by school type'](/schooltypePMEpivottable.png)
-7. Copy and paste the numbers next to the data from nPBE.
-8. In the sheet with school type, n, nPBE, and nPME, create a new column titled "Exemption_Rate." Your sheet should look like this: <br> !['schooltypeexemptionsheet1','Screenshot of Exemption Sheet Format'](/schooltypeexemptionsheet3.png)
-9. In cell F2 (in the "Exemption_Rate" column) insert the equation "(C2+B2)/D2)." In other words, you will add together the number of PMEs and PBEs and divide this total by the total number of students enrolled (this calculation is for private school students). 
-10. Extend this equation to cell F3 to calculate for public schools as well.
+7. Copy and paste the results into the "School_Type" sheet.
+8. In the "School_Type" sheet, create a new column titled "Exemption_Percent." I did this in column F. My sheet looks like this: <br> !['schooltypeexemptionsheet1','Screenshot of Exemption Sheet Format'](/schooltypeexemptionsheet3.png)
+9. In the first cell under "Exemption_Percent," add together the number of PMEs and PBEs and divide this total by the total number of students enrolled (this calculation is for private school students). For instance, in cell F2 (in the "Exemption_Rate" column), I inserted the equation "(C2+D2)/B2)." 
+10. Extend this equation to all cells in "Exemption_Percent" to calculate for public schools as well.
 11. Highlight the column and use the "123" feature to convert your values to percentages. 
 12. You should have an exemption rate of 3.23% at private schools and 1.81% at public schools.
 13. The answer: Private schools have a higher exemption rate. <br> ![Schooltypeexemptions',Vaccine Exemptions by School Type'](/Schooltypeexemptions.png)
