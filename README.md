@@ -14,10 +14,13 @@ Leah Russin | Email 1: press@vaccinatecalifornia.org <br> Email 2: info@vaccinat
 
 
 ***Document Sources***
-1. KidsData has updated data on exemption rates in each California county up until the 2018-2019 school year. Additional files also have data on vaccination rates. This can give me an idea of how exemption and vaccination trends have changed since the ban on Personal Belief Exemptions.
-2. This research report demonstrates a correlation between counties with high Personal Belief Exemptions pre-2016 and high increases in Permanent Medical Exemptions post-2016. This will help support my analysis of exemption trends before and after California’s ban on Personal Belief Exemptions. 
+Source | Description
+------ | -----------
+[KidsData](https://www.kidsdata.org/topic/748/immunizations-kindergarteners-exempt/table#fmt=1141&loc=2,127,347,1763,331,348,336,171,321,345,357,332,324,369,358,362,360,337,327,364,356,217,353,328,354,323,352,320,339,334,365,343,330,367,344,355,366,368,265,349,361,4,273,59,370,326,333,322,341,338,350,342,329,325,359,351,363,340,335&tf=124&ch=1102,1268,1103,1104,1438&sortColumnId=0&sortType=asc) | KidsData has updated data on vaccination and exemption rates from the California Department of Public Health. This will allow me to trace trends following the passage of Senate Bill 277.
+[Research Report](https://jamanetwork.com/journals/jama/fullarticle/2652640) by Paul L. Delameter, et al | This research report demonstrates a correlation between counties with high Personal Belief Exemptions pre-2016 and high increases in Permanent Medical Exemptions post-2016. This will help support my analysis of exemption trends before and after California’s ban on Personal Belief Exemptions. 
 
-## Data Visualization
+## Data Visualizualizations: Exemption Rates Before and After Senate Bill 277
+
 [!['Pre Senate Bill 277 Visualization','Visualization of Exemptions by County before Senate Bill 277'](/PreVisualization.png)](https://datawrapper.dwcdn.net/uViB8/5/)
 
 [!['Post Senate Bill 277 Visualization','Visualization of Exemptions by County after Senate Bill 277'](/PostVisualization.png)](https://datawrapper.dwcdn.net/hKlu5/2/)
