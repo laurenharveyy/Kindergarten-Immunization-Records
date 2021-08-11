@@ -52,7 +52,7 @@ Source | Description
 2. Create two new columns titled "PercentPBE" and "PercentPME." Mine are in columns G and H, respectively.
 3. Under "PercentPBE," divide the SUM of PBE by the SUM of n. For instance, I wrote in cell G2, "=(B2/D2)." Extend the equation to all cells in the column. Use the "123" feature to convert to a percentage. 
 4. Under "PercentPME," divide the SUM of PME by the SUM of n. For instance, I wrote in cell H2, "=(C2/D2)."  Extend the equation to all cells in the column. Use the "123" feature to convert to a percentage. 
-5. These are my results:
+5. These are my results: <br> !['Percentages of PBE and PME by County','Screenshot of Google Sheet that shows percentage of incoming kindrgarteners with PBE and PME by county'](/exemptionsheetpt2.png)
 
 ### Question 2: Did Public or Private Schools have a higher rate of exemptions including Personal Belief Exemption and Permanent Medical Exemption)?
 1. Refer to the dataset titled "Student Data"
