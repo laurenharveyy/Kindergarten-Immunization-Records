@@ -21,9 +21,9 @@ Source | Description
 
 ## Data Visualizualizations: Exemption Rates Before and After Senate Bill 277
 
-[!['Pre Senate Bill 277 Visualization','Visualization of Exemptions by County before Senate Bill 277'](/PreVisualization.png)](https://datawrapper.dwcdn.net/uViB8/5/)
+[!['Pre Senate Bill 277 Visualization','Visualization of Exemptions by County before Senate Bill 277'](/DataViz1.png)](https://datawrapper.dwcdn.net/uViB8/8/)
 
-[!['Post Senate Bill 277 Visualization','Visualization of Exemptions by County after Senate Bill 277'](/PostVisualization.png)](https://datawrapper.dwcdn.net/hKlu5/2/)
+[!['Post Senate Bill 277 Visualization','Visualization of Exemptions by County after Senate Bill 277'](/DataViz2.png)](https://datawrapper.dwcdn.net/hKlu5/3/)
 
 ## Data Analysis
 
