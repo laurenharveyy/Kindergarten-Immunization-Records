@@ -30,7 +30,7 @@ Source | Description
 ### Question 1: Which counties had the highest DTP vaccination rates among students between the 2000-2001 and 2015-2016 school year? The lowest?
 1. Create a pivot table using the Student Data File. Make the row County and the Value a SUM of "nDTP" (number of students reporting DTP vaccinations)<br> !['nDTPcounty','Pivot Table for Sum of DTP Vaccinations by County'](/nDTPcounty.png)
 2. Copy and paste the results into another sheet
-3. Create another pivot table using the Student Data File. Make the row County and the Value a SUM of n (number of students enrolled at each school) <br> !['ncounty','Pivot Table for Students Enrolled in Each County'](/ncounty.png)
+3. Create another pivot table using the Student Data File. Make the row County and the Value a SUM of n (number of students enrolled in each County) <br> !['ncounty','Pivot Table for Students Enrolled in Each County'](/ncounty.png)
 4. Copy and paste just the SUM of n into the sheet next to the nDTP data. Make sure each value is aligned with the appropriate county. Create a new column under D and title it "DTP_Rate." Your sheet should look like this: <br> !['DTPcountyratesheet',DTP vaccination rates by county sheet'](/DTPcountyratesheet.png) 
 5. In cell D2, input the equation "=B2/C2." This will divide the number of students vaccinated against DTP by the total number of students enrolled in each county. Use autofill or the dragging feature to extend this formula to all cells in the column.
 6. Convert the resulting values in DTP_Rate into percentages using the "123" feature in the toolbar
