@@ -1,7 +1,7 @@
 # California Kindergarten Immunization Data Analysis
 
 ## Story 
-Incoming kindergarteners in California schools, both public and private, are [required by state law](https://cchealth.org/immunization/school-requirements.php) to receive certain immunizations, such as those for Polio and Diptheria, Tetanus, and Pertussis (DTP). However, students can opt out of these required vaccinatons with Personal Belief Exemptions (PBE) given for religious or philosophical reasons, as well as Permanent Medical Exemptions (PME) given for certain medical conditions. However, the 2016-2017 school year marked the last year that incoming kindergarteners could enroll with PBEs due to the passage of [Senate Bill 277](/https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=201520160SB277). In turn, between 2016 and 2019, there has been a 500% increase in Personal Medical Exemptions throughout the state of California [KidsData](https://www.kidsdata.org/topic/748/immunizations-kindergarteners-exempt/table#fmt=1141&loc=2,127,347,1763,331,348,336,171,321,345,357,332,324,369,358,362,360,337,327,364,356,217,353,328,354,323,352,320,339,334,365,343,330,367,344,355,366,368,265,349,361,4,273,59,370,326,333,322,341,338,350,342,329,325,359,351,363,340,335&tf=124&ch=1102,1268,1103,1104,1438&sortColumnId=0&sortType=asc). Particularly, counties that reported a high percentage of students with exemptions pre-Senate Bill 277 tended to have high exemption rates during the 2018-2019 school year as well.
+Incoming kindergarteners in California schools, both public and private, are [required by state law](https://cchealth.org/immunization/school-requirements.php) to receive certain immunizations, such as those for Polio and Diptheria, Tetanus, and Pertussis (DTP). However, students can opt out of these required vaccinatons with Personal Belief Exemptions (PBE) given for religious or philosophical reasons, as well as Permanent Medical Exemptions (PME) given for certain medical conditions. However, the 2016-2017 school year marked the last year that incoming kindergarteners could enroll with PBEs due to the passage of [Senate Bill 277](/https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=201520160SB277). In turn, between 2016 and 2019, there has been a 500% increase in Personal Medical Exemptions throughout the state of California, according to [KidsData](https://www.kidsdata.org/topic/748/immunizations-kindergarteners-exempt/table#fmt=1141&loc=2,127,347,1763,331,348,336,171,321,345,357,332,324,369,358,362,360,337,327,364,356,217,353,328,354,323,352,320,339,334,365,343,330,367,344,355,366,368,265,349,361,4,273,59,370,326,333,322,341,338,350,342,329,325,359,351,363,340,335&tf=124&ch=1102,1268,1103,1104,1438&sortColumnId=0&sortType=asc). Particularly, counties that reported a high percentage of students with exemptions pre-Senate Bill 277 tended to have high exemption rates during the 2018-2019 school year as well.
 
 Therefore, my story will focus on vaccine exemption trends in California counties over time. Specifically, it will compare pre-Senate Bill 277 exemptions with post-Senate Bill 277 exemptions in order to determine how Senate Bill 277 has changed vaccination patterns. Additionally, by consulting with experts on the issue, I will determine key drivers of these trends (such as religious beliefs and concerns regarding autism). Particular emphasis will be placed on counties that have sustained high exemption rates over time, such as Nevada County.
 
@@ -93,46 +93,45 @@ Source | Description
 12. Create a new column in "VaxRate_Change" titled "Rate2000." I did this in column D. Then, divide the DTP vaccinations by the number of enrolled students and multiply by 100. We will multiply by 100 in order to calculate the rate per 100 students for the 2000-2001 school year. For instance, in cell D2, I wrote the equation "=(B2/C2)*100." Extend your equation to all cells in the column.
 16. We will now repeat this process for the the 2015-2016 school year. Create a new column titled "RATE2015." I did this in column G.  Then, divide the DTP vaccinations by the number of enrolled students and multiply by 100. We will multiply by 100 in order to calculate the rate per 100 students for the 2015-2016 school year. For instance, in cell G2, I wrote the equation "(E2/F2)*100." Extend this equation to all cells in the column. 
 18. My sheet now looks like this: !['DTPratesheet2',Sheet with DTP Rate Calculations'](/DTPratesheet2.png)
-19. Now, we will calculate the percent change of the rates. Create a new column  and title it "PERCENT_CHANGE." I did this in column H.We will now use the percent change equation: (New-Old)/Old * 100.  For instance, in cell H2, I wrote the equation "=(G2-D2)/D2." Extend this equation to all other cells in the column.
+19. Now, we will calculate the percent change of the rates. Create a new column  and title it "PERCENT_CHANGE." I did this in column H. We will now use the percent change equation: (New-Old)/Old * 100.  For instance, in cell H2, I wrote the equation "=(G2-D2)/D2." Extend this equation to all other cells in the column.
 22. Highlight the column and use the "123" feature to convert all values to percentages.
 23. Sort Column H from Z --> A. This will place the highest positive percent change values at the top. (Note: Alpine County will appear in row A. This is due to the fact that, with its null values, the equation will come back with an error message.)
 24. Ommitting Alpine County, the counties with the greatest percent increase are Sierra County (26.92%), Alameda County (2.33%), and Inyo County (2.33%). ![DTPpercentincrease','Counties with greatest percent increase in DTP vaccinations'](/DTPpercentincrease.png)
 25. Now sort Column H from A --> Z. This will place the counties with the lowest negative percentages (largest percent decrease) at the top. Your answer for the counties with the greatest percent decrease should be Trinity County (-14.21%), Nevada County (-11.71%), and Shasta County (-11.26%). !['DTPpercentdecrease','Counties with greatest percvent decrease in DTP vaccinations'](/DTPpercentdecrease.png)
 
-### Question 7: Of the counties with the greatest percent decrease in DTP vaccinations among students (Ttrinity, Nevada, and Shasta), what was the percentchange in vaccine exemptions?
+### Question 7: Of the counties with the greatest percent decrease in DTP vaccinations among students (Ttrinity, Nevada, and Shasta), what was the percent change in vaccine exemptions (including both PBE and PME)?
 1. Create a pivot table in "Student Data." Set the row as "County" and the value as "nPBE" for the number of students with Personal Belief Exemptions for each county.
 2. Create a filter for County and select only Trinity, Nevada, and Shasta.
 3. Create a filter for year and choose 2000 (for the 2000-2001 school year). <br> !['Personal Belief Exemptions 2000','Pivot table of personal belief exemptions for the 2000-2001 school year'](/PBE2000.png)
-4. Copy and paste your results into a new sheet. <br> 
+4. Copy and paste your results into a new sheet titled "ExemptionChange" <br> 
 5. Return to the same pivot table. Modify the filter to only include 2015 (for the 2015-2016 schoool year). <br> !['Personal Belief Exemptions 2015','Pivot table of personal belief exemptions for the 2015-2016 school year'](/PBE2015.png)
 6. Copy and paste your results into a new column in the same sheet where you pasted your previous results. 
 7. Create a new pivot table. Set the row as "County" and the value as "nPME" for the number of students with Permanent Medical Exsemptions for each county.
 8. Create a filter for County and select only Trinity, Nevada, and Shasta.
 9. Create a filter for year and choose 2000 (for the 2000-2001 school year). <br> ![Permanent Medical Exemptions 2000','Pivot table of permanent medical exemptions for the 2000-2001 school year'](/PME20001.png)
-10. Copy and paste your results into a new column in the same sheet where you pasted your previous results.
+10. Copy and paste your results into a new column in the "ExemptionChange" sheet.
 11. Return to the same pivot table. Modify the filter to only include 2015 (for the 2015-2016 school year). <br> ![Permanent Medical Exemptions 2015','Pivot table fo permanent medical exemptions for the 2015-2016 school year'](/PME20151.png)
 12. Create a new pivot table. Set the row as "County" and the value as "n" for the number of students enrolled in each county.
 13. Create a filter for County and select only Trinity, Nevada, and Shasta.
 14. Create a filter for year and choose 2000 (for the 2000-2001 school year). <br> ![Enrolled students 2000','Students enrolled in each county for the 2000-2001 school year](/n2000.png)
-15. Copy and paste your results into a new column in the same sheet as the previous steps.
+15. Copy and paste your results into a new column in the "ExemptionChange" sheet.
 16. Return to the same pivot table. Change the year filter to 2015 (for the 2015-2016 school year). <br> ![Enrolled students 2015','Students enrolled in each county for the 2015-2016 school year'](/n2015.png)
-17. Copy and paste your results into a new column in the same sheet as the previous steps.
+17. Copy and paste your results into a new column in the "ExemptionChange" sheet.
 18. Your sheet should look like this: <br> !['Percent Change in Exemptions Sheet','Sheet layout before calculations for the percent change in vaccine exemptions'](/exemptionchangesheet.png) <br>  *Notice the empty columns. This is purposeful for the sake of necesary calculations.*
-19. In Column D, create a new column called "Total2000." 
-20. In cell D2, insert the equation "=B2+C2" in order to add together the total number of PBE and PME for Nevada County during the 2000-2001 school year.
+19. Create a new column called "Total2000." I did this in Column D.
+20. Add together the total number of PBE and PME for the first county during the 2000-2001 school year. For instance, in cell D2, I wrote the equation "=B2+C2."
 21. Extend this equation to all cells in the column.
-22. In Column I, create a new column titled "Total2015"
-23. In cell I2, insert the equation "=G2+H2" in order to add together the total number of PBE and PME for Nevada County during the 2015-2016 school year.
-24. Title Column F "Rate2000."
-25. In cell F2, insert the equation "=(D2/E2)*100." Ths will give you the rate of exemptions per 100 students in Nevada County for the 2000-2001 school year.
+22. Create a new column titled "Total2015." I did this in Column I.
+23. Add together the total number of PBE and PME for Nevada County during the 2015-2016 school year. For instance, in cell I2, I wrote the equation "=G2+H2" in order to 
+24. Create a column called "Rate2000." I did this in Column F.
+25. Divide total exemptions for the 2000-2001 school year by the number of enrolled kindergarteners for that same school year. For instance, in cell F2, I wrote the equation "=(D2/E2)*100." Ths will give you the rate of exemptions per 100 students in Nevada County for the 2000-2001 school year.
 26. Extend the equation to all cells in the column.
-27. Title column K "Rate 2015."
-28. In cell K2, insert the equation "=(I2/J2*100." This will give you the rate of exemptions per 100 students in Nevada County for the 2015-2016 school year.
+27. Create a new column called "Rate 2015."  I did this in Column K.
+28. Divide total exemptions for the 2015-2016 school year by the number of enrolled kindergarteners for that same school year. For instance, in cell K2, I wrote the equation "=(I2/J2*100." This will give you the rate of exemptions per 100 students in Nevada County for the 2015-2016 school year.
 29. Extend the equation to all cells in the column.
-30. Title Column L "PCT_CHG." 
-31. In cell L2, insert the equation "=(K2-F2)/F2." This will calculate the percent change in exemptins for Nevada County between the 2000-2001 and 2015-2016 school years. 
-32. Extend the equation to all cells in the column.
-33. Use the "123" function to change the values to percentages.
+30. Create a new column called "PCT_CHG." I did this in Column L.
+31.  We will now use the percent change equation: (New-Old)/Old * 100. In cell L2, I wrote the equation "=(K2-F2)/F2." This will calculate the percent change in exemptions for Nevada County between the 2000-2001 and 2015-2016 school years. 
+32. Extend the equation to all cells in the column. Use the "123" function to change the values to percentages.
 34. Your sheet should look like this: <br> !['Final Results Percent Change Exemptions','Sheet that documents the final results for the calculations in the percent change of vaccine exemptions in select counties'](/exemptionchangeresults.png) <br> The answer is 188.21% in Nevada County, 500.27% in Shasta County, and 236.00% in Trinity County.
 
 ### Question 8: Which counties had the highest infant pertussis case rates (per 1,000) between 2014 and 2015?
@@ -145,4 +144,4 @@ Source | Description
 3. Create a new row beneath the dataset titled "Median"
 4. In your new row, go to column C. In that column, insert the equation =MEDIAN (C3:C60). This will calculate the median case rate among the counties, exempting the state of California.
 5. Repeat the appropriate equation in each column with case rates.
-6. Your answer should be 20.555 for 2010, 5.58 for 2011, 2.07 for 2012, 4.10 for 2013, and 17.28 for 2014. Notice that the median case rate is significantly higher in 2010 and 2014 -- the years the outbreaks occurred. <br> !['mediancaserate','Median case rates between 2010 and 2014'](/mediancaserate.png)
+6. Your answer should be 20.555 for 2010, 5.58 for 2011, 2.07 for 2012, 4.10 for 2013, and 17.28 for 2014. Notice that the median case rate is significantly higher in 2010 and 2014 -- the years the outbreaks occurred, according to the [Kaggle description](https://www.kaggle.com/broach/california-kindergarten-immunization-rates). <br> !['mediancaserate','Median case rates between 2010 and 2014'](/mediancaserate.png)
