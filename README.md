@@ -54,7 +54,7 @@ Source | Description
 2. Create two new columns titled "PercentPBE" and "PercentPME." Mine are in columns G and H, respectively.
 3. Under "PercentPBE," divide the SUM of PBE by the SUM of n. For instance, I wrote in cell G2, "=(B2/D2)." Extend the equation to all cells in the column. Use the "123" feature to convert to a percentage. 
 4. Under "PercentPME," divide the SUM of PME by the SUM of n. For instance, I wrote in cell H2, "=(C2/D2)."  Extend the equation to all cells in the column. Use the "123" feature to convert to a percentage. 
-5. These are my results: <br> !['Percentages of PBE and PME by County','Screenshot of Google Sheet that shows percentage of incoming kindrgarteners with PBE and PME by county'](/exemptionsheetpt2.png)
+5. These are my results (refer to columns G and H): <br> !['Percentages of PBE and PME by County','Screenshot of Google Sheet that shows percentage of incoming kindrgarteners with PBE and PME by county'](/exemptionsheetpt2.png)
 
 ### Question 4: Did Public or Private Schools have a higher rate of exemptions, including PBEs and PMEs?
 1. Refer to the Student Data File.
@@ -71,34 +71,33 @@ Source | Description
 12. You should have an exemption rate of 3.23% at private schools and 1.81% at public schools.
 13. The answer: Private schools have a higher exemption rate. <br> ![Schooltypeexemptions',Vaccine Exemptions by School Type'](/exemptionpercent2.png)
 
-### Question 5: What Percent of Exemptions were Personal Belief Exemptions by School Type (Public vs. Private School?)
+### Question 5: What Percent of Exemptions were Personal Belief Exemptions? Calculate the results by school type (public school vs. private school).
 1. In the same sheet with the data for School Exemptions by School Type, create a new column in G titled "Percent_PBE."
-2. In cell G2, insert the equation "=C2/(C2+D2)." This will divide the number of PBEs by the total number of exemptions (PBE + PME).
+2. divide the number of PBEs by the total number of exemptions (PBE + PME). For instance, in cell G2, I wrote the equation "=C2/(C2+D2)." 
 3. Press enter and extend the equation to cell G3.
 4. For your answer, you should get that 93.21% of exemptions were PBEs at private schools, and 91.38% of exemptions were PBEs at public schools.
 !['PBEschooltype','PBE by School Type'](/PBEschooltype.png)
 
 ### Question 6: Which counties had the greatest percent increase in DTP vaccinations between the 2000-2001 and 2015-2016 school years? Greatest percent decrease?
-1. Create a pivot table using the Student Data File. Make the row "County" and the Value a SUM of "nDTP" (number of students reporting DTP vaccinations). Filter by year and clear all values. Only select 2000. (for the 2000-2001 school year). <br> !['countynDTPtable','DTP vaccinations by county for the 2000-2001 school year'](/countynDTPtable.png)
-2. Copy and paste the values into a new sheet in a column titled "DTP_2000"
-3. Go back to the same pivot table. Change the filter to only include the year 2015 (for the 2015-2016 school year). <br> !['countynDTPtable2015','DTP vaccinations by county for the 2-15-2016 school year'](/countynDTPtable2015.png)
-4. Copy and paste the values into the same sheet. Name the column "DTP_2015."
-5. Create a pivot table. Make the row "County" and the Value a SUM of "n" (number of students enrolled in each county). Create a filter for year and only select 2000 (for the 2000-2001 school year). <br> !['countyenrollmenttable2000','Enrollment by county for the 2000-2001 school year'](/countyenrollmenttable2000.png)
-6. Copy and past the values. Name the column "n2000."
-7. Go back to the same pivot table. Change the filter to only include the year 2015 (for the 2015-2016 school year). <br> !['countyenrollmenttable2015','Enrollment by county for the 2015-2016 school year'](/countyenrollmenttable2015.png)
-8. Copy and paste the values into the same sheet. Name the columnn "n2015."
-9. Notice that values in "n2015" are missing for Alpine County. Insert N/A in order to indicate null values. 
-10. Your Google Sheet should look like this: !['DTPratesheet',DTP Numbers for Rate Calculation'](/DTPratesheet.png) <br> *Notice that column D is left blank. This is intentional, because this is where we will make rate calculations.*
-11. Once you have your sheet, calculate the DTP vaccination rate for the 2000-2001 school year by dividing DTP vaccinations by the number of enrolled students. Name Column D ""Rate2000." In cell D2, insert the equation "=(B2/C2)*100." We will multiply by 100 in order to calculate the rate per 100 students for the 2000-2001 school year. 
-12. Press enter and extend the equation to all cells in the column.
-13. Title Column G "RATE2015." In cell G2, insert the equation "(E2/F2)*100." Extend this equation to all cells in the column. This will give you the number of vaccination students per 100 for the 2015-2016 school year.
-14. Your Sheet should look like this: !['DTPratesheet2',Sheet with DTP Rate Calculations'](/DTPratesheet2.png)
-15. Now, we will calculate the percent change of the rates. Create a new column under H, and title it "PERCENT_CHANGE."
-16. In cell H2, insert the equation "=(G2-D2)/D2." Extend this equation to all other cells in the column.
-17. Highlight Column H and use the "123" feature to convert all values to percentages.
-18. Sort Column H from Z --> A. This will place the highest positive percent change values at the top. (Note: Alpine County will appear in row A. This is due to the fact that, with its null values, the equation will come back with an error message.)
-19. Ommitting Alpine County, the counties with the greatest percent increase are Sierra County (26.92%), Alameda County (2.33%), and Inyo County (2.33%). ![DTPpercentincrease','Counties with greatest percent increase in DTP vaccinations'](/DTPpercentincrease.png)
-20. Now sort Column H from A --> Z. This will place the counties with the lowest negative percentages (largest percent decrease) at the top. Your answer for the counties with the greatest percent decrease should be Trinity County (-14.21%), Nevada County (-11.71%), and Shasta County (-11.26%). !['DTPpercentdecrease','Counties with greatest percvent decrease in DTP vaccinations'](/DTPpercentdecrease.png)
+1. Create a pivot table using the Student Data File. Make the row "County" and the Value a SUM of "nDTP" (number of students reporting DTP vaccinations). 
+2. Filter by year and clear all values. Only select 2000 (for the 2000-2001 school year). <br> !['countynDTPtable','DTP vaccinations by county for the 2000-2001 school year'](/countynDTPtable.png)
+3. Copy and paste the values into a new sheet titled "VaxRate_Change". Title the column "DTP_2000."
+4. Go back to the same pivot table. Change the filter to only include the year 2015 (for the 2015-2016 school year). <br> !['countynDTPtable2015','DTP vaccinations by county for the 2-15-2016 school year'](/countynDTPtable2015.png)
+5. Copy and paste the values into the "VaxRate_Change" Sheet. Name the column "DTP_2015."
+6. Create a pivot table. Make the row "County" and the Value a SUM of "n" (number of students enrolled in each county). Create a filter for year and only select 2000 (for the 2000-2001 school year). <br> !['countyenrollmenttable2000','Enrollment by county for the 2000-2001 school year'](/countyenrollmenttable2000.png)
+7. Copy and paste the values into the "VaxRate_Change" Sheet. Name the column "n2000."
+8. Go back to the same pivot table. Change the filter to only include the year 2015 (for the 2015-2016 school year). <br> !['countyenrollmenttable2015','Enrollment by county for the 2015-2016 school year'](/countyenrollmenttable2015.png)
+9. Copy and paste the values into the "VaxRate_Change" Sheet. Name the columnn "n2015."
+10. Notice that values in "n2015" are missing for Alpine County. Insert N/A in order to indicate null values. 
+11. My "VaxRate_Change" Sheet looks like this: !['DTPratesheet',DTP Numbers for Rate Calculation'](/DTPratesheet.png) <br> *Notice that column D is left blank. This is intentional, because this is where we will make rate calculations.*
+12. Create a new column in "VaxRate_Change" titled "Rate2000." I did this in column D. Then, divide the DTP vaccinations by the number of enrolled students and multiply by 100. We will multiply by 100 in order to calculate the rate per 100 students for the 2000-2001 school year. For instance, in cell D2, I wrote the equation "=(B2/C2)*100." Extend your equation to all cells in the column.
+16. We will now repeat this process for the the 2015-2016 school year. Create a new column titled "RATE2015." I did this in column G.  Then, divide the DTP vaccinations by the number of enrolled students and multiply by 100. We will multiply by 100 in order to calculate the rate per 100 students for the 2015-2016 school year. For instance, in cell G2, I wrote the equation "(E2/F2)*100." Extend this equation to all cells in the column. 
+18. My sheet now looks like this: !['DTPratesheet2',Sheet with DTP Rate Calculations'](/DTPratesheet2.png)
+19. Now, we will calculate the percent change of the rates. Create a new column  and title it "PERCENT_CHANGE." I did this in column H.We will now use the percent change equation: (New-Old)/Old * 100.  For instance, in cell H2, I wrote the equation "=(G2-D2)/D2." Extend this equation to all other cells in the column.
+22. Highlight the column and use the "123" feature to convert all values to percentages.
+23. Sort Column H from Z --> A. This will place the highest positive percent change values at the top. (Note: Alpine County will appear in row A. This is due to the fact that, with its null values, the equation will come back with an error message.)
+24. Ommitting Alpine County, the counties with the greatest percent increase are Sierra County (26.92%), Alameda County (2.33%), and Inyo County (2.33%). ![DTPpercentincrease','Counties with greatest percent increase in DTP vaccinations'](/DTPpercentincrease.png)
+25. Now sort Column H from A --> Z. This will place the counties with the lowest negative percentages (largest percent decrease) at the top. Your answer for the counties with the greatest percent decrease should be Trinity County (-14.21%), Nevada County (-11.71%), and Shasta County (-11.26%). !['DTPpercentdecrease','Counties with greatest percvent decrease in DTP vaccinations'](/DTPpercentdecrease.png)
 
 ### Question 7: Of the counties with the greatest percent decrease in DTP vaccinations among students (Ttrinity, Nevada, and Shasta), what was the percentchange in vaccine exemptions?
 1. Create a pivot table in "Student Data." Set the row as "County" and the value as "nPBE" for the number of students with Personal Belief Exemptions for each county.
