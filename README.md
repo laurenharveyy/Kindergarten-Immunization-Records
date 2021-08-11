@@ -20,6 +20,10 @@ Email(s): press@vaccinatecalifornia.org, info@vaccinatecalifornia.org
 1. KidsData has updated data on exemption rates in each California county up until the 2018-2019 school year. Additional files also have data on vaccination rates. This can give me an idea of how exemption and vaccination trends have changed since the ban on Personal Belief Exemptions.
 2. This research report demonstrates a correlation between counties with high Personal Belief Exemptions pre-2016 and high increases in Permanent Medical Exemptions post-2016. This will help support my analysis of exemption trends before and after California’s ban on Personal Belief Exemptions. 
 
+## Data Visualization
+[!['Pre Senate Bill 277 Visualization','Visualization of Exemptions by County before Senate Bill 277'](/PreVisualization.png)](https://datawrapper.dwcdn.net/uViB8/5/)
+
+[!['Post Senate Bill 277 Visualization','Visualization of Exemptions by County after Senate Bill 277'](/PostVisualization.png)](https://datawrapper.dwcdn.net/hKlu5/2/)
 
 ## Data Analysis
 
