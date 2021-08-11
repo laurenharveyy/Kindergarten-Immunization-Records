@@ -29,7 +29,7 @@ Source | Description
 
 ## Data Analysis
 
-### Question 1: Which counties had the highest DTP vaccination rates among students between the 2000-2001 and 2015-2016 school year? The lowest?
+### Question 1: Which counties had the highest DTP vaccination rates among incoming kindergarteners between the 2000-2001 and 2015-2016 school years? The lowest?
 1. Create a pivot table using the Student Data File. Make the row County and the Value a SUM of "nDTP" (number of students reporting DTP vaccinations)<br> !['nDTPcounty','Pivot Table for Sum of DTP Vaccinations by County'](/nDTPcounty.png)
 2. Copy and paste the results into another sheet
 3. Create another pivot table using the Student Data File. Make the row County and the Value a SUM of n (number of students enrolled in each County) <br> !['ncounty','Pivot Table for Students Enrolled in Each County'](/ncounty.png)
@@ -39,7 +39,7 @@ Source | Description
 7. Sort the percentages from largest to smallest (Z --> A) to get the counties with the highest vaccination rates. Your answer should be Colusa County (97.95%), Glenn County (97.76%), and Kings County (97.53%).
 8. Sort the percentages from smallest to largest (A --> Z) to get the counties with the lowest vaccination rates. Your answer should be Nevada County (79.26%), Tuolumne County (83.56%), and Humboldt County (84.68%).
 
-### Question 2: Which counties had the highest percentage of incoming kindergarten students with exemptions, including both Personal Belief Exemptions (PBE) and Permanent Medical Exemptions (PME)? Calculate for the span between the 2000-2001 and 2015-2016 school years.
+### Question 2: Which counties had the highest percentage of incoming kindergarten students with vaccine exemptions, including both Personal Belief Exemptions (PBE) and Permanent Medical Exemptions (PME)? Calculate for the span between the 2000-2001 and 2015-2016 school years.
 1. Create a pivot table in the Student Data File. Make the row "County" and the value a SUM of "nPBE" for the total number of students reporting PBE in each county. <br> !['PBE Pivot Table','Pivot table of students reporting PBE in each county'](/PivotPersonalBelief.png)
 2. Copy and paste your results into a new sheet called "Exemptions." 
 3. Create a new pivot table. Make the row "County" and the value a SUM of "nPME" for the total number of students reporting PME in each county. <br> 1['PME Pivot Table','Pivot table of students reporting PME in each county'](/PivotPermanentMedical.png)
@@ -49,14 +49,14 @@ Source | Description
 7. Create a new column titled "Exemption_Rate." I made mine in column F. Add together the SUM of PBE and the SUM of PME and divide by the SUM of n. For instance, in cell F2, I input the equation "=(B2 + C2)/D2." Extend the equation to all cells in the column. Use the "123" feature to convert to a percentage.
 8. Sort "Exemption_Rate" from Z-->A to get the highest percentages on top. The top 3 should be Nevada County, Trinity County, and Siskiyou County. Here are my answers: <br> !['Exemption Results','Screenshot of Google Sheet with exemption results'](/exemptionsheetafter.png)
 
-### Question 3: What percent of incoming Kindergarteners in each county had PBE? PME?
+### Question 3: What percent of incoming Kindergarteners in each county had PBE? What percent had PME?
 1. Refer to the "Exemptions" sheet in the Student Data File.
 2. Create two new columns titled "PercentPBE" and "PercentPME." Mine are in columns G and H, respectively.
 3. Under "PercentPBE," divide the SUM of PBE by the SUM of n. For instance, I wrote in cell G2, "=(B2/D2)." Extend the equation to all cells in the column. Use the "123" feature to convert to a percentage. 
 4. Under "PercentPME," divide the SUM of PME by the SUM of n. For instance, I wrote in cell H2, "=(C2/D2)."  Extend the equation to all cells in the column. Use the "123" feature to convert to a percentage. 
 5. These are my results: <br> !['Percentages of PBE and PME by County','Screenshot of Google Sheet that shows percentage of incoming kindrgarteners with PBE and PME by county'](/exemptionsheetpt2.png)
 
-### Question 2: Did Public or Private Schools have a higher rate of exemptions including Personal Belief Exemption and Permanent Medical Exemption)?
+### Question 4: Did Public or Private Schools have a higher rate of exemptions including Personal Belief Exemption and Permanent Medical Exemption)?
 1. Refer to the dataset titled "Student Data"
 2. Create a new pivot table. Set the row as "schoolType" and the value as a SUM of "n" (number of students). This will give you the number of students enrolled at private and public schools, respectively. <br> !['schooltypeenrollmentpivottable','Pivot table of enrollment by school type'](/schooltypenrollmentpivottable.png)
 3. Copy and paste the results into a new sheet.
@@ -71,14 +71,14 @@ Source | Description
 12. You should have an exemption rate of 3.23% at private schools and 1.81% at public schools.
 13. The answer: Private schools have a higher exemption rate. <br> ![Schooltypeexemptions',Vaccine Exemptions by School Type'](/Schooltypeexemptions.png)
 
-### Question 3: What Percent of Exemptions were Personal Belief Exemptions by School Type (Public vs. Private School?)
+### Question 5: What Percent of Exemptions were Personal Belief Exemptions by School Type (Public vs. Private School?)
 1. In the same sheet with the data for School Exemptions by School Type, create a new column in G titled "Percent_PBE."
 2. In cell G2, insert the equation "=C2/(C2+D2)." This will divide the number of PBEs by the total number of exemptions (PBE + PME).
 3. Press enter and extend the equation to cell G3.
 4. For your answer, you should get that 93.21% of exemptions were PBEs at private schools, and 91.38% of exemptions were PBEs at public schools.
 !['PBEschooltype','PBE by School Type'](/PBEschooltype.png)
 
-### Question 4: Which counties had the greatest percent increase in DTP vaccinations between the 2000-2001 and 2015-2016 school years? Greatest percent decrease?
+### Question 6: Which counties had the greatest percent increase in DTP vaccinations between the 2000-2001 and 2015-2016 school years? Greatest percent decrease?
 1. Create a pivot table using the Student Data File. Make the row "County" and the Value a SUM of "nDTP" (number of students reporting DTP vaccinations). Filter by year and clear all values. Only select 2000. (for the 2000-2001 school year). <br> !['countynDTPtable','DTP vaccinations by county for the 2000-2001 school year'](/countynDTPtable.png)
 2. Copy and paste the values into a new sheet in a column titled "DTP_2000"
 3. Go back to the same pivot table. Change the filter to only include the year 2015 (for the 2015-2016 school year). <br> !['countynDTPtable2015','DTP vaccinations by county for the 2-15-2016 school year'](/countynDTPtable2015.png)
@@ -100,7 +100,7 @@ Source | Description
 19. Ommitting Alpine County, the counties with the greatest percent increase are Sierra County (26.92%), Alameda County (2.33%), and Inyo County (2.33%). ![DTPpercentincrease','Counties with greatest percent increase in DTP vaccinations'](/DTPpercentincrease.png)
 20. Now sort Column H from A --> Z. This will place the counties with the lowest negative percentages (largest percent decrease) at the top. Your answer for the counties with the greatest percent decrease should be Trinity County (-14.21%), Nevada County (-11.71%), and Shasta County (-11.26%). !['DTPpercentdecrease','Counties with greatest percvent decrease in DTP vaccinations'](/DTPpercentdecrease.png)
 
-### Question 5: Of the counties with the greatest percent decrease in DTP vaccinations among students (Ttrinity, Nevada, and Shasta), what was the percentchange in vaccine exemptions?
+### Question 7: Of the counties with the greatest percent decrease in DTP vaccinations among students (Ttrinity, Nevada, and Shasta), what was the percentchange in vaccine exemptions?
 1. Create a pivot table in "Student Data." Set the row as "County" and the value as "nPBE" for the number of students with Personal Belief Exemptions for each county.
 2. Create a filter for County and select only Trinity, Nevada, and Shasta.
 3. Create a filter for year and choose 2000 (for the 2000-2001 school year). <br> !['Personal Belief Exemptions 2000','Pivot table of personal belief exemptions for the 2000-2001 school year'](/PBE2000.png)
@@ -136,11 +136,11 @@ Source | Description
 33. Use the "123" function to change the values to percentages.
 34. Your sheet should look like this: <br> !['Final Results Percent Change Exemptions','Sheet that documents the final results for the calculations in the percent change of vaccine exemptions in select counties'](/exemptionchangeresults.png) <br> The answer is 188.21% in Nevada County, 500.27% in Shasta County, and 236.00% in Trinity County.
 
-### Question 6: Which counties had the highest infant pertussis case rates (per 1,000) between 2014 and 2015?
+### Question 8: Which counties had the highest infant pertussis case rates (per 1,000) between 2014 and 2015?
 1. Refer to the Infant Dataset and navigate to the column titled "Case_Rate"
 2. Click the drop down arrow and filter the values from Z --> A to sort the case rates from highest to lowest. Your answer should be Madera County (6.1), Imperial County (5.3), and Butte County (5.1). <br> ![Infant Case Rate','Pertussis Case Rates Among Infants in California Counties'](/infantcaserate.png)
 
-### Question 7: What was the median case rate among Counties for each year between 2010 and 2014?
+### Question 9: What was the median case rate among Counties for each year between 2010 and 2014?
 1. Refer to the dataset titled "PertusisRates2010_2015"
 2. Filter the cases for 2010 from Z --> A so that California is in the first row. 
 3. Create a new row beneath the dataset titled "Median"
