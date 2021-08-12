@@ -34,7 +34,7 @@ Source | Description
 2. Copy and paste the results into another sheet titled "DTP_Vax"
 3. Create another pivot table using the Student Data File. Make the row County and the Value a SUM of "n" in order to determine the number of incoming kindergarteners enrolled in each County. <br> !['ncounty','Pivot Table for Students Enrolled in Each County'](/ncounty.png)
 6. Copy and paste the results into the "DTP_Vax" sheet. Make sure each value is aligned with the appropriate county. 
-7. Create a new column in the "DTP_Vax" sheet and title it "DTPVax_Percent." I put mine in Column D. My sheet looks like this: <br> !['DTPcountyratesheet',DTP vaccination rates by county sheet'](/DTPcountyratesheet.png) <br> *Note: My screenshot says "DTPVax_Rate" in column D. Instead, it should say 'DTPVax_Percent."*
+7. Create a new column in the "DTP_Vax" sheet and title it "DTP_Rate." I put mine in Column D. My sheet looks like thi: s<br> !['DTPcountyratesheet',DTP vaccination rates by county sheet'](/DTPcountyratesheet.png)
 8. Divide the number of students vaccinated against DTP by the total number of students enrolled in each county. I went to cell D2 input the equation "=B2/C2." Use autofill or the dragging feature to extend this formula to all cells in the column. Convert the resulting values in DTP_Rate into percentages using the "123" feature in the toolbar
 10. Sort the percentages from largest to smallest (Z --> A) to get the counties with the highest percentage of incoming kindergarteners with the DTP vaccination. Your answer should be Colusa County (97.95%), Glenn County (97.76%), and Kings County (97.53%).
 11. Sort the percentages from smallest to largest (A --> Z) to get the counties with the lowest percentage of incoming kindergarteners with the DTP vaccination. Your answer should be Nevada County (79.26%), Tuolumne County (83.56%), and Humboldt County (84.68%).
@@ -72,7 +72,7 @@ Source | Description
 13. The answer: Private schools have a higher exemption rate. <br> ![Schooltypeexemptions',Vaccine Exemptions by School Type'](/exemptionpercent2.png)
 
 ### Question 5: What Percent of Exemptions were Personal Belief Exemptions? Calculate the results by school type (public school vs. private school).
-1. In the same sheet with the data for School Exemptions by School Type, create a new column in G titled "Percent_PBE."
+1. In the "School_Type" Sheet in the Student Data File, create a new column in G titled "Percent_PBE."
 2. divide the number of PBEs by the total number of exemptions (PBE + PME). For instance, in cell G2, I wrote the equation "=C2/(C2+D2)." 
 3. Press enter and extend the equation to cell G3.
 4. For your answer, you should get that 93.21% of exemptions were PBEs at private schools, and 91.38% of exemptions were PBEs at public schools.
@@ -127,7 +127,7 @@ Source | Description
 25. Divide total exemptions for the 2000-2001 school year by the number of enrolled kindergarteners for that same school year. For instance, in cell F2, I wrote the equation "=(D2/E2)*100." Ths will give you the rate of exemptions per 100 students in Nevada County for the 2000-2001 school year.
 26. Extend the equation to all cells in the column.
 27. Create a new column called "Rate 2015."  I did this in Column K.
-28. Divide total exemptions for the 2015-2016 school year by the number of enrolled kindergarteners for that same school year. For instance, in cell K2, I wrote the equation "=(I2/J2*100." This will give you the rate of exemptions per 100 students in Nevada County for the 2015-2016 school year.
+28. Divide total exemptions for the 2015-2016 school year by the number of enrolled kindergarteners for that same school year. For instance, in cell K2, I wrote the equation "=(I2/J2)*100." This will give you the rate of exemptions per 100 students in Nevada County for the 2015-2016 school year.
 29. Extend the equation to all cells in the column.
 30. Create a new column called "PCT_CHG." I did this in Column L.
 31.  We will now use the percent change equation: (New-Old)/Old * 100. In cell L2, I wrote the equation "=(K2-F2)/F2." This will calculate the percent change in exemptions for Nevada County between the 2000-2001 and 2015-2016 school years. 
@@ -135,11 +135,11 @@ Source | Description
 34. Your sheet should look like this: <br> !['Final Results Percent Change Exemptions','Sheet that documents the final results for the calculations in the percent change of vaccine exemptions in select counties'](/exemptionchangeresults.png) <br> The answer is 188.21% in Nevada County, 500.27% in Shasta County, and 236.00% in Trinity County.
 
 ### Question 8: Which counties had the highest infant pertussis case rates (per 1,000) between 2014 and 2015?
-1. Refer to the Infant Dataset and navigate to the column titled "Case_Rate"
+1. Refer to the Infant Data File and navigate to the column titled "Case_Rate"
 2. Click the drop down arrow and filter the values from Z --> A to sort the case rates from highest to lowest. Your answer should be Madera County (6.1), Imperial County (5.3), and Butte County (5.1). <br> ![Infant Case Rate','Pertussis Case Rates Among Infants in California Counties'](/infantcaserate.png)
 
 ### Question 9: What was the median case rate among Counties for each year between 2010 and 2014?
-1. Refer to the dataset titled "PertusisRates2010_2015"
+1. Refer pertusisRates2010_2015 File.
 2. Filter the cases for 2010 from Z --> A so that California is in the first row. 
 3. Create a new row beneath the dataset titled "Median"
 4. In your new row, go to column C. In that column, insert the equation =MEDIAN (C3:C60). This will calculate the median case rate among the counties, exempting the state of California.
