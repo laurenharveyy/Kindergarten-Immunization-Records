@@ -1,0 +1,120 @@
+FIPSCode,LocationType,Location,ExemptionType,TimeFrame,DataFormat,Data
+06,State,California,Permanent Medical Exemption,2019,Number,"4,812"
+06001,County,Alameda County,Permanent Medical Exemption,2019,Number,132
+06003,County,Alpine County,Permanent Medical Exemption,2019,Number,S
+06005,County,Amador County,Permanent Medical Exemption,2019,Number,3
+06007,County,Butte County,Permanent Medical Exemption,2019,Number,34
+06009,County,Calaveras County,Permanent Medical Exemption,2019,Number,12
+06011,County,Colusa County,Permanent Medical Exemption,2019,Number,0
+06013,County,Contra Costa County,Permanent Medical Exemption,2019,Number,132
+06015,County,Del Norte County,Permanent Medical Exemption,2019,Number,4
+06017,County,El Dorado County,Permanent Medical Exemption,2019,Number,93
+06019,County,Fresno County,Permanent Medical Exemption,2019,Number,52
+06021,County,Glenn County,Permanent Medical Exemption,2019,Number,3
+06023,County,Humboldt County,Permanent Medical Exemption,2019,Number,99
+06025,County,Imperial County,Permanent Medical Exemption,2019,Number,6
+06027,County,Inyo County,Permanent Medical Exemption,2019,Number,0
+06029,County,Kern County,Permanent Medical Exemption,2019,Number,57
+06031,County,Kings County,Permanent Medical Exemption,2019,Number,5
+06033,County,Lake County,Permanent Medical Exemption,2019,Number,12
+06035,County,Lassen County,Permanent Medical Exemption,2019,Number,3
+06037,County,Los Angeles County,Permanent Medical Exemption,2019,Number,783
+06039,County,Madera County,Permanent Medical Exemption,2019,Number,12
+06041,County,Marin County,Permanent Medical Exemption,2019,Number,82
+06043,County,Mariposa County,Permanent Medical Exemption,2019,Number,2
+06045,County,Mendocino County,Permanent Medical Exemption,2019,Number,50
+06047,County,Merced County,Permanent Medical Exemption,2019,Number,8
+06049,County,Modoc County,Permanent Medical Exemption,2019,Number,0
+06051,County,Mono County,Permanent Medical Exemption,2019,Number,4
+06053,County,Monterey County,Permanent Medical Exemption,2019,Number,52
+06055,County,Napa County,Permanent Medical Exemption,2019,Number,25
+06057,County,Nevada County,Permanent Medical Exemption,2019,Number,105
+06059,County,Orange County,Permanent Medical Exemption,2019,Number,456
+06061,County,Placer County,Permanent Medical Exemption,2019,Number,155
+06063,County,Plumas County,Permanent Medical Exemption,2019,Number,8
+06065,County,Riverside County,Permanent Medical Exemption,2019,Number,232
+06067,County,Sacramento County,Permanent Medical Exemption,2019,Number,309
+06069,County,San Benito County,Permanent Medical Exemption,2019,Number,2
+06071,County,San Bernardino County,Permanent Medical Exemption,2019,Number,147
+06073,County,San Diego County,Permanent Medical Exemption,2019,Number,599
+06075,County,San Francisco County,Permanent Medical Exemption,2019,Number,46
+06077,County,San Joaquin County,Permanent Medical Exemption,2019,Number,26
+06079,County,San Luis Obispo County,Permanent Medical Exemption,2019,Number,68
+06081,County,San Mateo County,Permanent Medical Exemption,2019,Number,49
+06083,County,Santa Barbara County,Permanent Medical Exemption,2019,Number,72
+06085,County,Santa Clara County,Permanent Medical Exemption,2019,Number,129
+06087,County,Santa Cruz County,Permanent Medical Exemption,2019,Number,97
+06089,County,Shasta County,Permanent Medical Exemption,2019,Number,75
+06,State,California,Personal Belief Exemption,2019,Number,N_A
+06001,County,Alameda County,Personal Belief Exemption,2019,Number,N_A
+06003,County,Alpine County,Personal Belief Exemption,2019,Number,N_A
+06005,County,Amador County,Personal Belief Exemption,2019,Number,N_A
+06007,County,Butte County,Personal Belief Exemption,2019,Number,N_A
+06009,County,Calaveras County,Personal Belief Exemption,2019,Number,N_A
+06011,County,Colusa County,Personal Belief Exemption,2019,Number,N_A
+06013,County,Contra Costa County,Personal Belief Exemption,2019,Number,N_A
+06015,County,Del Norte County,Personal Belief Exemption,2019,Number,N_A
+06017,County,El Dorado County,Personal Belief Exemption,2019,Number,N_A
+06019,County,Fresno County,Personal Belief Exemption,2019,Number,N_A
+06021,County,Glenn County,Personal Belief Exemption,2019,Number,N_A
+06023,County,Humboldt County,Personal Belief Exemption,2019,Number,N_A
+06025,County,Imperial County,Personal Belief Exemption,2019,Number,N_A
+06027,County,Inyo County,Personal Belief Exemption,2019,Number,N_A
+06029,County,Kern County,Personal Belief Exemption,2019,Number,N_A
+06031,County,Kings County,Personal Belief Exemption,2019,Number,N_A
+06033,County,Lake County,Personal Belief Exemption,2019,Number,N_A
+06035,County,Lassen County,Personal Belief Exemption,2019,Number,N_A
+06037,County,Los Angeles County,Personal Belief Exemption,2019,Number,N_A
+06039,County,Madera County,Personal Belief Exemption,2019,Number,N_A
+06041,County,Marin County,Personal Belief Exemption,2019,Number,N_A
+06043,County,Mariposa County,Personal Belief Exemption,2019,Number,N_A
+06045,County,Mendocino County,Personal Belief Exemption,2019,Number,N_A
+06047,County,Merced County,Personal Belief Exemption,2019,Number,N_A
+06049,County,Modoc County,Personal Belief Exemption,2019,Number,N_A
+06051,County,Mono County,Personal Belief Exemption,2019,Number,N_A
+06053,County,Monterey County,Personal Belief Exemption,2019,Number,N_A
+06055,County,Napa County,Personal Belief Exemption,2019,Number,N_A
+06057,County,Nevada County,Personal Belief Exemption,2019,Number,N_A
+06059,County,Orange County,Personal Belief Exemption,2019,Number,N_A
+06061,County,Placer County,Personal Belief Exemption,2019,Number,N_A
+06063,County,Plumas County,Personal Belief Exemption,2019,Number,N_A
+06065,County,Riverside County,Personal Belief Exemption,2019,Number,N_A
+06067,County,Sacramento County,Personal Belief Exemption,2019,Number,N_A
+06091,County,Sierra County,Permanent Medical Exemption,2019,Number,0
+06093,County,Siskiyou County,Permanent Medical Exemption,2019,Number,8
+06095,County,Solano County,Permanent Medical Exemption,2019,Number,22
+06097,County,Sonoma County,Permanent Medical Exemption,2019,Number,213
+06099,County,Stanislaus County,Permanent Medical Exemption,2019,Number,66
+06101,County,Sutter County,Permanent Medical Exemption,2019,Number,28
+06103,County,Tehama County,Permanent Medical Exemption,2019,Number,8
+06105,County,Trinity County,Permanent Medical Exemption,2019,Number,4
+06107,County,Tulare County,Permanent Medical Exemption,2019,Number,22
+06109,County,Tuolumne County,Permanent Medical Exemption,2019,Number,20
+06111,County,Ventura County,Permanent Medical Exemption,2019,Number,140
+06113,County,Yolo County,Permanent Medical Exemption,2019,Number,35
+06115,County,Yuba County,Permanent Medical Exemption,2019,Number,6
+06069,County,San Benito County,Personal Belief Exemption,2019,Number,N_A
+06071,County,San Bernardino County,Personal Belief Exemption,2019,Number,N_A
+06073,County,San Diego County,Personal Belief Exemption,2019,Number,N_A
+06075,County,San Francisco County,Personal Belief Exemption,2019,Number,N_A
+06077,County,San Joaquin County,Personal Belief Exemption,2019,Number,N_A
+06079,County,San Luis Obispo County,Personal Belief Exemption,2019,Number,N_A
+06081,County,San Mateo County,Personal Belief Exemption,2019,Number,N_A
+06083,County,Santa Barbara County,Personal Belief Exemption,2019,Number,N_A
+06085,County,Santa Clara County,Personal Belief Exemption,2019,Number,N_A
+06087,County,Santa Cruz County,Personal Belief Exemption,2019,Number,N_A
+06089,County,Shasta County,Personal Belief Exemption,2019,Number,N_A
+06091,County,Sierra County,Personal Belief Exemption,2019,Number,N_A
+06093,County,Siskiyou County,Personal Belief Exemption,2019,Number,N_A
+06095,County,Solano County,Personal Belief Exemption,2019,Number,N_A
+06097,County,Sonoma County,Personal Belief Exemption,2019,Number,N_A
+06099,County,Stanislaus County,Personal Belief Exemption,2019,Number,N_A
+06101,County,Sutter County,Personal Belief Exemption,2019,Number,N_A
+06103,County,Tehama County,Personal Belief Exemption,2019,Number,N_A
+06105,County,Trinity County,Personal Belief Exemption,2019,Number,N_A
+06107,County,Tulare County,Personal Belief Exemption,2019,Number,N_A
+06109,County,Tuolumne County,Personal Belief Exemption,2019,Number,N_A
+06111,County,Ventura County,Personal Belief Exemption,2019,Number,N_A
+06113,County,Yolo County,Personal Belief Exemption,2019,Number,N_A
+06115,County,Yuba County,Personal Belief Exemption,2019,Number,N_A
+
