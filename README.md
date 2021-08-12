@@ -18,7 +18,7 @@ Leah Russin | Email 1: press@vaccinatecalifornia.org <br> Email 2: info@vaccinat
 ***Document Sources***
 Source | Description
 ------ | -----------
-[KidsData](https://www.kidsdata.org/topic/748/immunizations-kindergarteners-exempt/table#fmt=1141&loc=2,127,347,1763,331,348,336,171,321,345,357,332,324,369,358,362,360,337,327,364,356,217,353,328,354,323,352,320,339,334,365,343,330,367,344,355,366,368,265,349,361,4,273,59,370,326,333,322,341,338,350,342,329,325,359,351,363,340,335&tf=124&ch=1102,1268,1103,1104,1438&sortColumnId=0&sortType=asc) | KidsData has updated data on vaccination and exemption rates from the California Department of Public Health. It also has analysis of trends that have occurred after the passage of Senate 277. This will further inform and support my analysis of the data.
+[KidsData](https://www.kidsdata.org/topic/748/immunizations-kindergarteners-exempt/table#fmt=1141&loc=2,127,347,1763,331,348,336,171,321,345,357,332,324,369,358,362,360,337,327,364,356,217,353,328,354,323,352,320,339,334,365,343,330,367,344,355,366,368,265,349,361,4,273,59,370,326,333,322,341,338,350,342,329,325,359,351,363,340,335&tf=124&ch=1102,1268,1103,1104,1438&sortColumnId=0&sortType=asc) | KidsData has updated data on vaccination and exemption rates from the California Department of Public Health. It also has analysis of trends that have occurred after the passage of Senate Bill 277. This will further inform and support my analysis of the data.
 [Research Report](https://jamanetwork.com/journals/jama/fullarticle/2652640) by Paul L. Delameter, et al | This research report demonstrates a correlation between counties with high Personal Belief Exemptions pre-2016 and high increases in Permanent Medical Exemptions post-2016. This will help support my analysis of exemption trends before and after California’s ban on Personal Belief Exemptions. 
 
 ## Data Visualizations: Exemption Rates Before and After Senate Bill 277
@@ -29,7 +29,7 @@ Source | Description
 
 ## Data Analysis
 
-### Question 1: Which counties had the highest percentage of incoming kindergarteners with the DTP vaccination between the 2000-2001 and 2015-2016 school years? Which counties had the lowest?
+### Question 1: Which counties had the highest percentage of incoming kindergarteners with the DTP vaccine between the 2000-2001 and 2015-2016 school years? Which counties had the lowest?
 1. Create a pivot table using the Student Data File. Make the row County and the Value a SUM of "nDTP" in order to determine the number of incoming kindergarteners with DTP vaccinations in each county <br> !['nDTPcounty','Pivot Table for Sum of DTP Vaccinations by County'](/nDTPcounty.png)
 2. Copy and paste the results into another sheet titled "DTP_Vax"
 3. Create another pivot table using the Student Data File. Make the row County and the Value a SUM of "n" in order to determine the number of incoming kindergarteners enrolled in each County. <br> !['ncounty','Pivot Table for Students Enrolled in Each County'](/ncounty.png)
@@ -105,7 +105,7 @@ Source | Description
 3. Create a filter for year and choose 2000 (for the 2000-2001 school year). <br> !['Personal Belief Exemptions 2000','Pivot table of personal belief exemptions for the 2000-2001 school year'](/PBE2000.png)
 4. Copy and paste your results into a new sheet titled "ExemptionChange" <br> 
 5. Return to the same pivot table. Modify the filter to only include 2015 (for the 2015-2016 schoool year). <br> !['Personal Belief Exemptions 2015','Pivot table of personal belief exemptions for the 2015-2016 school year'](/PBE2015.png)
-6. Copy and paste your results into a new column in the same sheet where you pasted your previous results. 
+6. Copy and paste your results into a new column in the "ExemptionChange" Sheet. 
 7. Create a new pivot table. Set the row as "County" and the value as "nPME" for the number of students with Permanent Medical Exsemptions for each county.
 8. Create a filter for County and select only Trinity, Nevada, and Shasta.
 9. Create a filter for year and choose 2000 (for the 2000-2001 school year). <br> ![Permanent Medical Exemptions 2000','Pivot table of permanent medical exemptions for the 2000-2001 school year'](/PME20001.png)
