@@ -34,7 +34,7 @@ Source | Description
 2. Copy and paste the results into another sheet titled "DTP_Vax"
 3. Create another pivot table using the Student Data File. Make the row County and the Value a SUM of "n" in order to determine the number of incoming kindergarteners enrolled in each County. <br> !['ncounty','Pivot Table for Students Enrolled in Each County'](/ncounty.png)
 6. Copy and paste the results into the "DTP_Vax" sheet. Make sure each value is aligned with the appropriate county. 
-7. Create a new column in the "DTP_Vax" sheet and title it "DTP_Rate." I put mine in Column D. My sheet looks like thi: s<br> !['DTPcountyratesheet',DTP vaccination rates by county sheet'](/DTPcountyratesheet.png)
+7. Create a new column in the "DTP_Vax" sheet and title it "DTP_Rate." I put mine in Column D. My sheet looks like this: <br> !['DTPcountyratesheet',DTP vaccination rates by county sheet'](/DTPcountyratesheet.png)
 8. Divide the number of students vaccinated against DTP by the total number of students enrolled in each county. I went to cell D2 input the equation "=B2/C2." Use autofill or the dragging feature to extend this formula to all cells in the column. Convert the resulting values in DTP_Rate into percentages using the "123" feature in the toolbar
 10. Sort the percentages from largest to smallest (Z --> A) to get the counties with the highest percentage of incoming kindergarteners with the DTP vaccination. Your answer should be Colusa County (97.95%), Glenn County (97.76%), and Kings County (97.53%).
 11. Sort the percentages from smallest to largest (A --> Z) to get the counties with the lowest percentage of incoming kindergarteners with the DTP vaccination. Your answer should be Nevada County (79.26%), Tuolumne County (83.56%), and Humboldt County (84.68%).
@@ -65,7 +65,7 @@ Source | Description
 6. Create another pivot table. Set the row as "schoolType" and the Value as a SUM of "nPME" (number of Permanent Medical Exemptions). This will give you the number of students with Personal Medical Exemptions at private and public schools, respecitvely. <br> ![schooltypePMEpivottable','Pivot table of number of students with PME by school type'](/schooltypePMEpivottable.png)
 7. Copy and paste the results into the "School_Type" sheet.
 8. In the "School_Type" sheet, create a new column titled "Exemption_Percent." I did this in column F. My sheet looks like this: <br> !['schooltypeexemptionsheet1','Screenshot of Exemption Sheet Format'](/exemptionpercent.png)
-9. In the first cell under "Exemption_Percent," add together the number of PMEs and PBEs and divide this total by the total number of students enrolled (this calculation is for private school students). For instance, in cell F2 (in the "Exemption_Rate" column), I inserted the equation "(C2+D2)/B2)." 
+9. In the first cell under "Exemption_Percent," add together the number of PMEs and PBEs and divide this total by the total number of students enrolled (this calculation is for private school students). For instance, in cell F2 (in the "Exemption_Percent" column), I inserted the equation "=(C2+D2)/B2." 
 10. Extend this equation to all cells in "Exemption_Percent" to calculate for public schools as well.
 11. Highlight the column and use the "123" feature to convert your values to percentages. 
 12. You should have an exemption rate of 3.23% at private schools and 1.81% at public schools.
@@ -78,7 +78,7 @@ Source | Description
 4. For your answer, you should get that 93.21% of exemptions were PBEs at private schools, and 91.38% of exemptions were PBEs at public schools.
 !['PBEschooltype','PBE by School Type'](/PBEschooltype.png)
 
-### Question 6: Which counties had the greatest percent increase in DTP vaccinations between the 2000-2001 and 2015-2016 school years? Greatest percent decrease?
+### Question 6: Which counties had the greatest percent increase in DTP vaccinations for incoming kindergarteners between the 2000-2001 and 2015-2016 school years? Greatest percent decrease?
 1. Create a pivot table using the Student Data File. Make the row "County" and the Value a SUM of "nDTP" (number of students reporting DTP vaccinations). 
 2. Filter by year and clear all values. Only select 2000 (for the 2000-2001 school year). <br> !['countynDTPtable','DTP vaccinations by county for the 2000-2001 school year'](/countynDTPtable.png)
 3. Copy and paste the values into a new sheet titled "VaxRate_Change". Title the column "DTP_2000."
@@ -99,7 +99,7 @@ Source | Description
 24. Ommitting Alpine County, the counties with the greatest percent increase are Sierra County (26.92%), Alameda County (2.33%), and Inyo County (2.33%). ![DTPpercentincrease','Counties with greatest percent increase in DTP vaccinations'](/DTPpercentincrease.png)
 25. Now sort Column H from A --> Z. This will place the counties with the lowest negative percentages (largest percent decrease) at the top. Your answer for the counties with the greatest percent decrease should be Trinity County (-14.21%), Nevada County (-11.71%), and Shasta County (-11.26%). !['DTPpercentdecrease','Counties with greatest percvent decrease in DTP vaccinations'](/DTPpercentdecrease.png)
 
-### Question 7: Of the counties with the greatest percent decrease in DTP vaccinations among students (Trinity, Nevada, and Shasta), what was the percent change in vaccine exemptions (including both PBEs and PMEs)?
+### Question 7: Of the counties with the greatest percent decrease in DTP vaccinations among incoming kindergartneners (Trinity, Nevada, and Shasta), what was the percent change in vaccine exemptions (including both PBEs and PMEs)?
 1. Create a pivot table in "Student Data." Set the row as "County" and the value as "nPBE" for the number of students with Personal Belief Exemptions for each county.
 2. Create a filter for County and select only Trinity, Nevada, and Shasta.
 3. Create a filter for year and choose 2000 (for the 2000-2001 school year). <br> !['Personal Belief Exemptions 2000','Pivot table of personal belief exemptions for the 2000-2001 school year'](/PBE2000.png)
