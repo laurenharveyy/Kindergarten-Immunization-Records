@@ -11,7 +11,7 @@ Therefore, my story will focus on vaccine exemption trends in California countie
 
 Source | Contact | Description
 -------| --------|------------
-Dr. Ninez Ponce | Email: nonponce@uclas.edu <br> Phone: (310) 794-2691 | Dr. Ninez Ponce is the principal investigator at the [California Health Interview Survey](https://healthpolicy.ucla.edu/chis/Pages/default.aspx), which conducts surveys throughout the state of California in order to gather health related data. She can speak to broader vaccination and exemption trends based on her hands-on research and analysis.
+Dr. Ninez Ponce | Email: nonponce@uclas.edu <br> Phone: (310) 794-2691 | Dr. Ninez Ponce is the principal investigator at the [California Health Interview Survey](https://healthpolicy.ucla.edu/chis/Pages/default.aspx), which conducts surveys throughout the state of California in order to gather health related data. Based on her multidisciplinary research, she can speak to broader trends and possible behavioral patterns contributing to an unwillingness to get vaccinated.
 Leah Russin | Email 1: press@vaccinatecalifornia.org <br> Email 2: info@vaccinatecalifornia.org | Leah Russin is a leader at [Vaccinate California](https://vaccinatecalifornia.org/about/), a parent advocacy group that encourages statewide vaccination through volunteer efforts. She can speak on the difficulties of her advocacy and trends she has noticed in what is driving continued exemption rates, even after the passing of Senate Bill 277.
 
 
